@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSOS v1.0 | Data Science Operating System</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#120404',
+              dark: '#240A0A',
+              slate: '#3B1212',
+              blue: '#E53E3E',
+              hover: '#C53030',
+              ice: '#FFF5F5',
+              border: 'rgba(239,68,68,0.1)'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'Segoe UI', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: 'Inter', 'Segoe UI', sans-serif;
+      background-color: #0B0303;
+      color: #FEE2E2;
+    }
+    .glass-card {
+      background: rgba(38, 12, 12, 0.45);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(239, 68, 68, 0.08);
+    }
+    .glass-input {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #F1F5F9;
+    }
+    .glass-input:focus {
+      border-color: #3A86C8;
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(58, 134, 200, 0.3);
+    }
+    .custom-scroll::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scroll::-webkit-scrollbar-track {
+      background: rgba(15, 23, 42, 0.3);
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body class="custom-scroll">
+
+  <!-- ========================================================
+       SCREEN 1: WELCOME SCREEN / MODULE LAUNCHER
+       ======================================================== -->
+  <div id="launcher-screen" class="min-h-screen py-10 px-4 md:px-12 flex flex-col justify-between hidden">
+    <!-- Header -->
+    <div class="max-w-7xl mx-auto w-full flex justify-between items-center mb-8 border-b border-brand-border pb-6">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-brand-blue flex items-center justify-center text-white text-lg font-bold shadow-lg shadow-brand-blue/30">
+          <i class="fas fa-terminal"></i>
+        </div>
+        <div>
+          <h1 class="text-xl font-bold tracking-tight bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">DSOS v1.0</h1>
+          <p class="text-xs text-gray-500 font-medium">Data Science Operating System</p>
+        </div>
+      </div>
+      
+      <!-- Stats Summary -->
+      <div class="flex items-center space-x-6 text-sm">
+        <div class="hidden sm:flex items-center space-x-2 bg-brand-dark/40 px-3.5 py-1.5 rounded-lg border border-brand-border">
+          <span class="text-gray-400">Streak:</span>
+          <span class="text-amber-500 font-bold" id="launcher-streak-val">🔥 5 Days</span>
+        </div>
+        <button onclick="changeDomain('master')" class="bg-brand-blue hover:bg-brand-hover text-white text-xs font-semibold px-4 py-2 rounded-lg transition duration-200 shadow-lg shadow-brand-blue/20">
+          <i class="fas fa-cubes mr-1.5"></i> Master Control
+        </button>
+      </div>
+    </div>
+
+    <!-- Main Launcher Grid -->
+    <div class="max-w-7xl mx-auto w-full flex-grow mb-10">
+      <div class="mb-8">
+        <h2 class="text-3xl font-extrabold tracking-tight text-white mb-2 font-['Outfit']">Select Study Module</h2>
+        <p class="text-gray-400 text-sm max-w-2xl">Enter a domain-specific learning workspace or navigate to global trackers to log interviews, applications, and second brain concepts.</p>
+      </div>
+
+      <!-- Domain Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="launcher-domains-grid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+      
+      <!-- Global Trackers Block -->
+      <div class="mt-12 border-t border-brand-border pt-8">
+        <h3 class="text-lg font-semibold text-gray-300 mb-5 font-['Outfit']"><i class="fas fa-network-wired mr-2 text-brand-blue"></i>Global Portfolios & Career Trackers</h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+          <button onclick="launchGlobalTracker('projects')" class="glass-card p-4 rounded-xl text-left hover:border-brand-blue/50 hover:bg-brand-dark/60 transition group">
+            <i class="fas fa-folder-open text-brand-blue text-lg mb-3 group-hover:scale-110 transition"></i>
+            <h4 class="font-bold text-sm text-white">Project Portfolio</h4>
+            <p class="text-xs text-gray-500 mt-1">10 portfolio designs</p>
+          </button>
+          
+          <button onclick="launchGlobalTracker('resources')" class="glass-card p-4 rounded-xl text-left hover:border-brand-blue/50 hover:bg-brand-dark/60 transition group">
+            <i class="fas fa-book-reader text-brand-blue text-lg mb-3 group-hover:scale-110 transition"></i>
+            <h4 class="font-bold text-sm text-white">Resource Library</h4>
+            <p class="text-xs text-gray-500 mt-1">Reading progress</p>
+          </button>
+          
+          <button onclick="launchGlobalTracker('second-brain')" class="glass-card p-4 rounded-xl text-left hover:border-brand-blue/50 hover:bg-brand-dark/60 transition group">
+            <i class="fas fa-brain text-brand-blue text-lg mb-3 group-hover:scale-110 transition"></i>
+            <h4 class="font-bold text-sm text-white">Second Brain</h4>
+            <p class="text-xs text-gray-500 mt-1">Notes & Mental Models</p>
+          </button>
+          
+          <button onclick="launchGlobalTracker('applications')" class="glass-card p-4 rounded-xl text-left hover:border-brand-blue/50 hover:bg-brand-dark/60 transition group">
+            <i class="fas fa-file-invoice-dollar text-brand-blue text-lg mb-3 group-hover:scale-110 transition"></i>
+            <h4 class="font-bold text-sm text-white">Job Applications</h4>
+            <p class="text-xs text-gray-500 mt-1">Funnel stages</p>
+          </button>
+          
+          <button onclick="launchGlobalTracker('interviews')" class="glass-card p-4 rounded-xl text-left hover:border-brand-blue/50 hover:bg-brand-dark/60 transition group">
+            <i class="fas fa-comments text-brand-blue text-lg mb-3 group-hover:scale-110 transition"></i>
+            <h4 class="font-bold text-sm text-white">Interview logs</h4>
+            <p class="text-xs text-gray-500 mt-1">Experiences & outcomes</p>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="max-w-7xl mx-auto w-full text-center border-t border-brand-border pt-6 text-xs text-gray-600 font-medium">
+      DSOS v1.0 • Built for Senior Data Scientists & Analysts • Data is stored locally in your browser cache.
+    </div>
+  </div>
+
+  <!-- ========================================================
+       SCREEN 2: WORKSPACE INTERFACE (SIDEBAR + CONTENT)
+       ======================================================== -->
+  <div id="workspace-screen" class="min-h-screen flex hidden">
+    <!-- Sidebar Navigation -->
+    <aside class="w-64 bg-brand-navy border-r border-brand-border flex flex-col justify-between shrink-0">
+      <div class="flex flex-col">
+        <!-- Logo -->
+        <div class="p-6 border-b border-brand-border flex items-center justify-between">
+          <div class="flex items-center space-x-2.5">
+            <div class="w-8 h-8 rounded-lg bg-brand-blue flex items-center justify-center text-white text-sm font-bold shadow-md shadow-brand-blue/30">
+              <i id="sidebar-icon" class="fas fa-terminal"></i>
+            </div>
+            <div>
+              <h2 id="sidebar-title" class="font-bold text-sm text-white tracking-tight">SQL Analytics</h2>
+              <p class="text-[10px] text-gray-500 font-medium font-mono uppercase" id="sidebar-sub-title">Domain Active</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="p-4 space-y-1.5 flex-grow" id="sidebar-menu">
+          <!-- Swapped dynamically by app.js depending on activeDomain -->
+        </nav>
+      </div>
+
+      <!-- Settings and Exit Launcher -->
+      <div class="p-4 border-t border-brand-border space-y-2">
+        <button onclick="switchTab('settings')" class="w-full flex items-center space-x-3 px-3 py-2 rounded-lg text-sm text-gray-400 hover:text-white hover:bg-brand-dark/40 transition">
+          <i class="fas fa-cog"></i>
+          <span>Settings & Backup</span>
+        </button>
+        <button onclick="exitToLauncher()" class="w-full flex items-center space-x-3 px-3 py-2 rounded-lg text-sm text-brand-blue hover:text-white hover:bg-brand-blue transition font-bold">
+          <i class="fas fa-door-open"></i>
+          <span>Module Launcher</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Panel Container -->
+    <main class="flex-grow flex flex-col overflow-hidden bg-[#0A0D14]">
+      <!-- Top Actions Bar -->
+      <header class="h-16 border-b border-brand-border px-8 flex items-center justify-between shrink-0 bg-brand-navy/60 backdrop-blur-md">
+        <div class="flex items-center space-x-3 text-sm">
+          <span class="text-gray-500 font-semibold" id="header-domain-badge">DOMAIN:</span>
+          <span class="text-white font-bold px-2 py-0.5 rounded bg-brand-dark border border-brand-border" id="header-domain-name">SQL</span>
+        </div>
+        
+        <!-- Center Focus Text -->
+        <div class="hidden lg:flex items-center space-x-2 text-xs max-w-xl bg-brand-dark/50 px-4 py-1.5 rounded-lg border border-brand-border">
+          <span class="text-amber-500 font-bold uppercase shrink-0"><i class="fas fa-bullseye mr-1"></i>Focus:</span>
+          <span class="text-gray-300 font-medium truncate" id="top-focus-goal-val">Focus target loading...</span>
+          <button onclick="editFocusGoal()" class="text-gray-500 hover:text-white transition shrink-0 ml-2"><i class="fas fa-edit"></i></button>
+        </div>
+
+        <div class="flex items-center space-x-4">
+          <div class="flex items-center space-x-1.5 text-sm bg-brand-dark/50 px-3 py-1 rounded-lg border border-brand-border cursor-pointer" onclick="incrementStreak()">
+            <span id="top-streak-val">🔥 5 Days</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Content Scroll Panel -->
+      <div id="content-pane" class="flex-grow p-8 overflow-y-auto custom-scroll">
+        <!-- Tab Views will be populated dynamically by app.js -->
+      </div>
+    </main>
+  </div>
+
+  <!-- ========================================================
+       COMMON MODALS & FORMS
+       ======================================================== -->
+  <!-- 1. Task Modal -->
+  <div id="task-modal" class="fixed inset-0 bg-brand-navy/80 backdrop-blur-sm z-50 flex items-center justify-center hidden">
+    <div class="glass-card max-w-lg w-full rounded-2xl shadow-2xl p-6 border border-brand-border">
+      <div class="flex justify-between items-center mb-6 pb-4 border-b border-brand-border">
+        <h3 class="text-lg font-bold text-white font-['Outfit']" id="task-modal-title"><i class="fas fa-plus mr-2 text-brand-blue"></i>Add Study Task</h3>
+        <button onclick="closeModal('task-modal')" class="text-gray-400 hover:text-white transition"><i class="fas fa-times"></i></button>
+      </div>
+      <form id="task-form" onsubmit="saveTask(event)" class="space-y-4">
+        <input type="hidden" id="task-edit-id">
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Module</label>
+            <input type="text" id="task-module" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="e.g. Module 1" required>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Submodule</label>
+            <input type="text" id="task-submodule" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="e.g. Professional OOP" required>
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-gray-400 mb-1">Task Name</label>
+          <input type="text" id="task-name" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="Describe what you are learning/solving" required>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Priority</label>
+            <select id="task-priority" class="w-full glass-input rounded-lg px-3 py-2 text-sm bg-brand-navy">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High" selected>High</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Difficulty</label>
+            <select id="task-difficulty" class="w-full glass-input rounded-lg px-3 py-2 text-sm bg-brand-navy">
+              <option value="Easy">Easy</option>
+              <option value="Medium" selected>Medium</option>
+              <option value="Hard">Hard</option>
+            </select>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Est. Hours</label>
+            <input type="number" step="0.5" id="task-est" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="2.0" required>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Act. Hours</label>
+            <input type="number" step="0.5" id="task-act" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="0.0">
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Status</label>
+            <select id="task-status" class="w-full glass-input rounded-lg px-3 py-2 text-sm bg-brand-navy">
+              <option value="Not Started">Not Started</option>
+              <option value="Learning">Learning</option>
+              <option value="Practicing">Practicing</option>
+              <option value="Completed">Completed</option>
+              <option value="Revision Needed">Revision Needed</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Mastery</label>
+            <select id="task-mastery" class="w-full glass-input rounded-lg px-3 py-2 text-sm bg-brand-navy">
+              <option value="⚪ Beginner">⚪ Beginner</option>
+              <option value="🟡 Learning">🟡 Learning</option>
+              <option value="🔵 Practicing">🔵 Practicing</option>
+              <option value="🟢 Confident">🟢 Confident</option>
+              <option value="⭐ Interview Ready">⭐ Interview Ready</option>
+              <option value="👑 Master">👑 Master</option>
+            </select>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Resource</label>
+            <input type="text" id="task-resource" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="e.g. Book, website link">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Question to Practice</label>
+            <input type="text" id="task-question" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="e.g. LeetCode #175, StrataScratch #9">
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-gray-400 mb-1">Notes</label>
+          <textarea id="task-notes" rows="2" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="Write references or concepts log"></textarea>
+        </div>
+        <div class="pt-4 flex justify-end space-x-3 border-t border-brand-border">
+          <button type="button" onclick="closeModal('task-modal')" class="px-4 py-2 rounded-lg text-sm text-gray-400 hover:text-white transition">Cancel</button>
+          <button type="submit" class="bg-brand-blue hover:bg-brand-hover text-white text-sm font-semibold px-5 py-2 rounded-lg shadow-lg shadow-brand-blue/20">Save Task</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 2. Resource Modal -->
+  <div id="resource-modal" class="fixed inset-0 bg-brand-navy/80 backdrop-blur-sm z-50 flex items-center justify-center hidden">
+    <div class="glass-card max-w-lg w-full rounded-2xl shadow-2xl p-6 border border-brand-border">
+      <div class="flex justify-between items-center mb-6 pb-4 border-b border-brand-border">
+        <h3 class="text-lg font-bold text-white font-['Outfit']" id="res-modal-title"><i class="fas fa-plus mr-2 text-brand-blue"></i>Add Resource</h3>
+        <button onclick="closeModal('resource-modal')" class="text-gray-400 hover:text-white transition"><i class="fas fa-times"></i></button>
+      </div>
+      <form id="resource-form" onsubmit="saveResource(event)" class="space-y-4">
+        <input type="hidden" id="res-edit-id">
+        <div>
+          <label class="block text-xs font-semibold text-gray-400 mb-1">Resource Name</label>
+          <input type="text" id="res-name" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="e.g. Python OOP" required>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Author / Creator</label>
+            <input type="text" id="res-author" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="e.g. Dusty Phillips" required>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Type</label>
+            <select id="res-type" class="w-full glass-input rounded-lg px-3 py-2 text-sm bg-brand-navy">
+              <option value="Book">Book</option>
+              <option value="Course">Course</option>
+              <option value="Website">Website</option>
+              <option value="Documentation">Documentation</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Difficulty</label>
+            <select id="res-diff" class="w-full glass-input rounded-lg px-3 py-2 text-sm bg-brand-navy">
+              <option value="Easy">Easy</option>
+              <option value="Medium" selected>Medium</option>
+              <option value="Hard">Hard</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Priority</label>
+            <select id="res-priority" class="w-full glass-input rounded-lg px-3 py-2 text-sm bg-brand-navy">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High" selected>High</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Progress %</label>
+            <input type="number" min="0" max="100" id="res-progress" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="0">
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-gray-400 mb-1">Purpose / Description</label>
+          <input type="text" id="res-purpose" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="What will you master from this resource?">
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Recommended Chapters</label>
+            <input type="text" id="res-chapters" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="e.g. Ch 1-5, 8">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Skip Chapters</label>
+            <input type="text" id="res-skip" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="e.g. Ch 6-7">
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-gray-400 mb-1">Notes</label>
+          <textarea id="res-notes" rows="2" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="Free-form progress remarks"></textarea>
+        </div>
+        <div class="pt-4 flex justify-end space-x-3 border-t border-brand-border">
+          <button type="button" onclick="closeModal('resource-modal')" class="px-4 py-2 rounded-lg text-sm text-gray-400 hover:text-white transition">Cancel</button>
+          <button type="submit" class="bg-brand-blue hover:bg-brand-hover text-white text-sm font-semibold px-5 py-2 rounded-lg shadow-lg shadow-brand-blue/20">Save Resource</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 3. Mistake Modal -->
+  <div id="mistake-modal" class="fixed inset-0 bg-brand-navy/80 backdrop-blur-sm z-50 flex items-center justify-center hidden">
+    <div class="glass-card max-w-lg w-full rounded-2xl shadow-2xl p-6 border border-brand-border">
+      <div class="flex justify-between items-center mb-6 pb-4 border-b border-brand-border">
+        <h3 class="text-lg font-bold text-white font-['Outfit']" id="mist-modal-title"><i class="fas fa-plus mr-2 text-brand-blue"></i>Log Mistake</h3>
+        <button onclick="closeModal('mistake-modal')" class="text-gray-400 hover:text-white transition"><i class="fas fa-times"></i></button>
+      </div>
+      <form id="mistake-form" onsubmit="saveMistake(event)" class="space-y-4">
+        <input type="hidden" id="mist-edit-id">
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Date</label>
+            <input type="date" id="mist-date" class="w-full glass-input rounded-lg px-3 py-2 text-sm" required>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Needs Revision?</label>
+            <select id="mist-revision" class="w-full glass-input rounded-lg px-3 py-2 text-sm bg-brand-navy">
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-gray-400 mb-1">Problem / Task Reference</label>
+          <input type="text" id="mist-problem" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="e.g. MRO diamond problem" required>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-gray-400 mb-1">Mistake Committed</label>
+          <textarea id="mist-desc" rows="2" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="What exactly did you do wrong?" required></textarea>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-gray-400 mb-1">Root Reason</label>
+          <textarea id="mist-reason" rows="2" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="Why did you commit this mistake?" required></textarea>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-gray-400 mb-1">Correct Approach</label>
+          <textarea id="mist-correct" rows="2" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="What is the correct logic?" required></textarea>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-gray-400 mb-1">Lesson Learned</label>
+          <input type="text" id="mist-lesson" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="Key takeaways" required>
+        </div>
+        <div class="pt-4 flex justify-end space-x-3 border-t border-brand-border">
+          <button type="button" onclick="closeModal('mistake-modal')" class="px-4 py-2 rounded-lg text-sm text-gray-400 hover:text-white transition">Cancel</button>
+          <button type="submit" class="bg-brand-blue hover:bg-brand-hover text-white text-sm font-semibold px-5 py-2 rounded-lg shadow-lg shadow-brand-blue/20">Log Mistake</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 4. Second Brain Note Modal -->
+  <div id="note-modal" class="fixed inset-0 bg-brand-navy/80 backdrop-blur-sm z-50 flex items-center justify-center hidden">
+    <div class="glass-card max-w-xl w-full rounded-2xl shadow-2xl p-6 border border-brand-border">
+      <div class="flex justify-between items-center mb-6 pb-4 border-b border-brand-border">
+        <h3 class="text-lg font-bold text-white font-['Outfit']" id="note-modal-title"><i class="fas fa-plus mr-2 text-brand-blue"></i>Add Note</h3>
+        <button onclick="closeModal('note-modal')" class="text-gray-400 hover:text-white transition"><i class="fas fa-times"></i></button>
+      </div>
+      <form id="note-form" onsubmit="saveNote(event)" class="space-y-4">
+        <input type="hidden" id="note-edit-id">
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Category</label>
+            <select id="note-category" class="w-full glass-input rounded-lg px-3 py-2 text-sm bg-brand-navy">
+              <option value="Ideas">Ideas</option>
+              <option value="Mental Models">Mental Models</option>
+              <option value="Book Notes">Book Notes</option>
+              <option value="Career Advice">Career Advice</option>
+              <option value="Interesting Concepts">Interesting Concepts</option>
+              <option value="Quotes">Quotes</option>
+              <option value="Learning Journal">Learning Journal</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Tag / Topic</label>
+            <input type="text" id="note-tag" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="e.g. System Design, algorithms" required>
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-gray-400 mb-1">Topic Title</label>
+          <input type="text" id="note-title" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="Concept name" required>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-gray-400 mb-1">Detailed Content</label>
+          <textarea id="note-content" rows="6" class="w-full glass-input rounded-lg px-3 py-2 text-sm font-mono" placeholder="Write structured markdown notes or code snippets..." required></textarea>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-gray-400 mb-1">References / Links</label>
+          <input type="text" id="note-refs" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="Reference URL, books, blogs">
+        </div>
+        <div class="pt-4 flex justify-end space-x-3 border-t border-brand-border">
+          <button type="button" onclick="closeModal('note-modal')" class="px-4 py-2 rounded-lg text-sm text-gray-400 hover:text-white transition">Cancel</button>
+          <button type="submit" class="bg-brand-blue hover:bg-brand-hover text-white text-sm font-semibold px-5 py-2 rounded-lg shadow-lg shadow-brand-blue/20">Save Note</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 5. Job Application Modal -->
+  <div id="application-modal" class="fixed inset-0 bg-brand-navy/80 backdrop-blur-sm z-50 flex items-center justify-center hidden">
+    <div class="glass-card max-w-lg w-full rounded-2xl shadow-2xl p-6 border border-brand-border">
+      <div class="flex justify-between items-center mb-6 pb-4 border-b border-brand-border">
+        <h3 class="text-lg font-bold text-white font-['Outfit']" id="app-modal-title"><i class="fas fa-plus mr-2 text-brand-blue"></i>Log Job Application</h3>
+        <button onclick="closeModal('application-modal')" class="text-gray-400 hover:text-white transition"><i class="fas fa-times"></i></button>
+      </div>
+      <form id="application-form" onsubmit="saveApplication(event)" class="space-y-4">
+        <input type="hidden" id="app-edit-id">
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Company</label>
+            <input type="text" id="app-company" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="e.g. Stripe" required>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Role Title</label>
+            <input type="text" id="app-role" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="e.g. Data Scientist" required>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Location / Remote</label>
+            <input type="text" id="app-location" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="e.g. Remote, San Francisco" required>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Applied Date</label>
+            <input type="date" id="app-date" class="w-full glass-input rounded-lg px-3 py-2 text-sm" required>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Pipeline Status</label>
+            <select id="app-status" class="w-full glass-input rounded-lg px-3 py-2 text-sm bg-brand-navy">
+              <option value="Applied">Applied</option>
+              <option value="Online Assessment">Online Assessment</option>
+              <option value="Interviewing">Interviewing</option>
+              <option value="Offer Received">Offer Received</option>
+              <option value="Rejected">Rejected</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Salary Range Offered</label>
+            <input type="text" id="app-salary" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="e.g. $130k - $150k">
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-gray-400 mb-1">Recruiter / Contact</label>
+          <input type="text" id="app-contact" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="Name or email address">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-gray-400 mb-1">Recruiter Logs / Notes</label>
+          <textarea id="app-notes" rows="2" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="Next interview schedule or requirements..."></textarea>
+        </div>
+        <div class="pt-4 flex justify-end space-x-3 border-t border-brand-border">
+          <button type="button" onclick="closeModal('application-modal')" class="px-4 py-2 rounded-lg text-sm text-gray-400 hover:text-white transition">Cancel</button>
+          <button type="submit" class="bg-brand-blue hover:bg-brand-hover text-white text-sm font-semibold px-5 py-2 rounded-lg shadow-lg shadow-brand-blue/20">Log Application</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 6. Interview Modal -->
+  <div id="interview-modal" class="fixed inset-0 bg-brand-navy/80 backdrop-blur-sm z-50 flex items-center justify-center hidden">
+    <div class="glass-card max-w-lg w-full rounded-2xl shadow-2xl p-6 border border-brand-border">
+      <div class="flex justify-between items-center mb-6 pb-4 border-b border-brand-border">
+        <h3 class="text-lg font-bold text-white font-['Outfit']" id="int-modal-title"><i class="fas fa-plus mr-2 text-brand-blue"></i>Log Interview Round</h3>
+        <button onclick="closeModal('interview-modal')" class="text-gray-400 hover:text-white transition"><i class="fas fa-times"></i></button>
+      </div>
+      <form id="interview-form" onsubmit="saveInterview(event)" class="space-y-4">
+        <input type="hidden" id="int-edit-id">
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Company</label>
+            <input type="text" id="int-company" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="e.g. Google" required>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Role / Title</label>
+            <input type="text" id="int-role" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="e.g. Data Scientist" required>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Interview Round</label>
+            <input type="text" id="int-round" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="e.g. Technical Coding screen" required>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Date</label>
+            <input type="date" id="int-date" class="w-full glass-input rounded-lg px-3 py-2 text-sm" required>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Performance (1 - 5)</label>
+            <select id="int-performance" class="w-full glass-input rounded-lg px-3 py-2 text-sm bg-brand-navy">
+              <option value="1">1 (Poor)</option>
+              <option value="2">2 (Below Average)</option>
+              <option value="3" selected>3 (Average)</option>
+              <option value="4">4 (Good)</option>
+              <option value="5">5 (Exceptional)</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Outcome Status</label>
+            <select id="int-outcome" class="w-full glass-input rounded-lg px-3 py-2 text-sm bg-brand-navy">
+              <option value="Pending">Pending</option>
+              <option value="Passed">Passed</option>
+              <option value="Failed">Failed</option>
+              <option value="Scheduled">Scheduled</option>
+              <option value="Offer">Offer</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-gray-400 mb-1">Questions Asked</label>
+          <textarea id="int-questions" rows="3" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="Describe the programming puzzles or SQL queries asked..." required></textarea>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Identified Weak Areas</label>
+            <input type="text" id="int-weak" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="e.g. recursion edge cases">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Follow-up Actions</label>
+            <input type="text" id="int-followup" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="e.g. solve 10 more recursion questions">
+          </div>
+        </div>
+        <div class="pt-4 flex justify-end space-x-3 border-t border-brand-border">
+          <button type="button" onclick="closeModal('interview-modal')" class="px-4 py-2 rounded-lg text-sm text-gray-400 hover:text-white transition">Cancel</button>
+          <button type="submit" class="bg-brand-blue hover:bg-brand-hover text-white text-sm font-semibold px-5 py-2 rounded-lg shadow-lg shadow-brand-blue/20">Log Experience</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 7. Focus Goal Modal -->
+  <div id="focus-modal" class="fixed inset-0 bg-brand-navy/80 backdrop-blur-sm z-50 flex items-center justify-center hidden">
+    <div class="glass-card max-w-md w-full rounded-2xl shadow-2xl p-6 border border-brand-border">
+      <div class="flex justify-between items-center mb-6 pb-4 border-b border-brand-border">
+        <h3 class="text-lg font-bold text-white font-['Outfit']"><i class="fas fa-bullseye mr-2 text-brand-blue"></i>Update Focus Goal</h3>
+        <button onclick="closeModal('focus-modal')" class="text-gray-400 hover:text-white transition"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-gray-400 mb-1">Active Sprint / Goal Statement</label>
+          <textarea id="focus-goal-input" rows="3" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="Enter what you are focused on this week..."></textarea>
+        </div>
+        <div class="pt-4 flex justify-end space-x-3 border-t border-brand-border">
+          <button type="button" onclick="closeModal('focus-modal')" class="px-4 py-2 rounded-lg text-sm text-gray-400 hover:text-white transition">Cancel</button>
+          <button onclick="saveFocusGoal()" class="bg-brand-blue hover:bg-brand-hover text-white text-sm font-semibold px-5 py-2 rounded-lg shadow-lg shadow-brand-blue/20">Update Goal</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main scripts linking -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
