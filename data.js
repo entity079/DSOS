@@ -1947,7 +1947,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★
+      interviewFrequency: "★★★"
     },
     {
       id: "comm_002",
@@ -1968,7 +1968,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★
+      interviewFrequency: "★★★"
     },
     {
       id: "comm_003",
@@ -1989,7 +1989,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★
+      interviewFrequency: "★★★"
     },
     {
       id: "comm_004",
@@ -2010,7 +2010,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_005",
@@ -2031,7 +2031,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_006",
@@ -2052,7 +2052,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★
+      interviewFrequency: "★★★"
     },
     {
       id: "comm_007",
@@ -2073,7 +2073,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_008",
@@ -2094,7 +2094,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★
+      interviewFrequency: "★★★"
     },
     {
       id: "comm_009",
@@ -2115,7 +2115,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_010",
@@ -2136,7 +2136,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_011",
@@ -2157,7 +2157,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_012",
@@ -2178,7 +2178,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★★
+      interviewFrequency: "★★★★★"
     },
     {
       id: "comm_013",
@@ -2199,7 +2199,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_014",
@@ -2220,7 +2220,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_015",
@@ -2241,7 +2241,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_016",
@@ -2262,7 +2262,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★★
+      interviewFrequency: "★★★★★"
     },
     {
       id: "comm_017",
@@ -2283,7 +2283,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★★
+      interviewFrequency: "★★★★★"
     },
     {
       id: "comm_018",
@@ -2304,7 +2304,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_019",
@@ -2325,7 +2325,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★
+      interviewFrequency: "★★★"
     },
     {
       id: "comm_020",
@@ -2346,7 +2346,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★
+      interviewFrequency: "★★★"
     },
     {
       id: "comm_021",
@@ -2367,7 +2367,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★
+      interviewFrequency: "★★★"
     },
     {
       id: "comm_022",
@@ -2388,7 +2388,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★
+      interviewFrequency: "★★★"
     },
     {
       id: "comm_023",
@@ -2409,7 +2409,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_024",
@@ -2430,7 +2430,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_025",
@@ -2451,7 +2451,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_026",
@@ -2472,7 +2472,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_027",
@@ -2493,7 +2493,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_028",
@@ -2514,7 +2514,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★
+      interviewFrequency: "★★★"
     },
     {
       id: "comm_029",
@@ -2535,7 +2535,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_030",
@@ -2556,7 +2556,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_031",
@@ -2577,7 +2577,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★★
+      interviewFrequency: "★★★★★"
     },
     {
       id: "comm_032",
@@ -2598,7 +2598,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★★
+      interviewFrequency: "★★★★★"
     },
     {
       id: "comm_033",
@@ -2619,7 +2619,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★★
+      interviewFrequency: "★★★★★"
     },
     {
       id: "comm_034",
@@ -2640,7 +2640,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_035",
@@ -2661,7 +2661,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_036",
@@ -2682,7 +2682,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★★
+      interviewFrequency: "★★★★★"
     },
     {
       id: "comm_037",
@@ -2703,7 +2703,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★★
+      interviewFrequency: "★★★★★"
     },
     {
       id: "comm_038",
@@ -2724,7 +2724,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_039",
@@ -2745,7 +2745,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★★
+      interviewFrequency: "★★★★★"
     },
     {
       id: "comm_040",
@@ -2766,7 +2766,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_041",
@@ -2787,7 +2787,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_042",
@@ -2808,7 +2808,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_043",
@@ -2829,7 +2829,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_044",
@@ -2850,7 +2850,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_045",
@@ -2871,7 +2871,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_046",
@@ -2892,7 +2892,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_047",
@@ -2913,7 +2913,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_048",
@@ -2934,7 +2934,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★
+      interviewFrequency: "★★★"
     },
     {
       id: "comm_049",
@@ -2955,7 +2955,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_050",
@@ -2976,7 +2976,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_051",
@@ -2997,7 +2997,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_052",
@@ -3018,7 +3018,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_053",
@@ -3039,7 +3039,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★★
+      interviewFrequency: "★★★★★"
     },
     {
       id: "comm_054",
@@ -3060,7 +3060,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_055",
@@ -3081,7 +3081,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_056",
@@ -3102,7 +3102,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★★
+      interviewFrequency: "★★★★★"
     },
     {
       id: "comm_057",
@@ -3123,7 +3123,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★★
+      interviewFrequency: "★★★★★"
     },
     {
       id: "comm_058",
@@ -3144,7 +3144,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★★
+      interviewFrequency: "★★★★★"
     },
     {
       id: "comm_059",
@@ -3165,7 +3165,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★★
+      interviewFrequency: "★★★★★"
     },
     {
       id: "comm_060",
@@ -3186,7 +3186,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★★
+      interviewFrequency: "★★★★★"
     },
     {
       id: "comm_061",
@@ -3207,7 +3207,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★★
+      interviewFrequency: "★★★★★"
     },
     {
       id: "comm_062",
@@ -3228,7 +3228,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_063",
@@ -3249,7 +3249,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_064",
@@ -3270,7 +3270,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_065",
@@ -3291,7 +3291,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_066",
@@ -3312,7 +3312,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★★
+      interviewFrequency: "★★★★★"
     },
     {
       id: "comm_067",
@@ -3333,7 +3333,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_068",
@@ -3354,7 +3354,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★★
+      interviewFrequency: "★★★★★"
     },
     {
       id: "comm_069",
@@ -3375,7 +3375,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★★
+      interviewFrequency: "★★★★★"
     },
     {
       id: "comm_070",
@@ -3396,7 +3396,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_071",
@@ -3417,7 +3417,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★★
+      interviewFrequency: "★★★★★"
     },
     {
       id: "comm_072",
@@ -3438,7 +3438,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_073",
@@ -3459,7 +3459,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_074",
@@ -3480,7 +3480,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_075",
@@ -3501,7 +3501,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★★
+      interviewFrequency: "★★★★★"
     },
     {
       id: "comm_076",
@@ -3522,7 +3522,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_077",
@@ -3543,7 +3543,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_078",
@@ -3564,7 +3564,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★★
+      interviewFrequency: "★★★★★"
     },
     {
       id: "comm_079",
@@ -3585,7 +3585,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_080",
@@ -3606,7 +3606,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_081",
@@ -3627,7 +3627,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★★
+      interviewFrequency: "★★★★★"
     },
     {
       id: "comm_082",
@@ -3648,7 +3648,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_083",
@@ -3669,7 +3669,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_084",
@@ -3690,7 +3690,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_085",
@@ -3711,7 +3711,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_086",
@@ -3732,7 +3732,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★★
+      interviewFrequency: "★★★★★"
     },
     {
       id: "comm_087",
@@ -3753,7 +3753,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_088",
@@ -3774,7 +3774,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_089",
@@ -3795,7 +3795,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_090",
@@ -3816,7 +3816,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_091",
@@ -3837,7 +3837,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_092",
@@ -3858,7 +3858,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★★
+      interviewFrequency: "★★★★★"
     },
     {
       id: "comm_093",
@@ -3879,7 +3879,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_094",
@@ -3900,7 +3900,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★
+      interviewFrequency: "★★★"
     },
     {
       id: "comm_095",
@@ -3921,7 +3921,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★
+      interviewFrequency: "★★★"
     },
     {
       id: "comm_096",
@@ -3942,7 +3942,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_097",
@@ -3963,7 +3963,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★★
+      interviewFrequency: "★★★★★"
     },
     {
       id: "comm_098",
@@ -3984,7 +3984,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★
+      interviewFrequency: "★★"
     },
     {
       id: "comm_099",
@@ -4005,7 +4005,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_100",
@@ -4026,7 +4026,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★★
+      interviewFrequency: "★★★★"
     },
     {
       id: "comm_101",
@@ -4047,7 +4047,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★
+      interviewFrequency: "★★★"
     },
     {
       id: "comm_102",
@@ -4068,7 +4068,7 @@ const DEFAULT_DATA = {
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "★★★
+      interviewFrequency: "★★★"
     }
   ],
   resources: [

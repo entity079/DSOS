@@ -525,6 +525,7 @@ def run_migration():
             
         freq = "★★★★★" if int(weight) >= 5 else "★★★★" if int(weight) == 3 or int(weight) == 4 else "★★★" if int(weight) == 2 else "★★"
         
+        q = '"'
         return f"""id: "{tid}",
       domain: "communication",
       module: "{mod}",
@@ -543,7 +544,7 @@ def run_migration():
       favorite: false,
       bookmarked: false,
       reviseLater: false,
-      interviewFrequency: "{freq}"""
+      interviewFrequency: {q}{freq}{q}"""
 
     text = re.sub(comm_task_regex, comm_repl, text)
 
