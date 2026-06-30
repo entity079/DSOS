@@ -238,7 +238,7 @@
         <h3 class="text-lg font-bold text-white font-['Outfit']" id="task-modal-title"><i class="fas fa-plus mr-2 text-brand-blue"></i>Add Study Task</h3>
         <button onclick="closeModal('task-modal')" class="text-gray-400 hover:text-white transition"><i class="fas fa-times"></i></button>
       </div>
-      <form id="task-form" onsubmit="saveTask(event)" class="space-y-4">
+            <form id="task-form" onsubmit="saveTask(event)" class="space-y-4">
         <input type="hidden" id="task-edit-id">
         <div class="grid grid-cols-2 gap-4">
           <div>
@@ -251,35 +251,44 @@
           </div>
         </div>
         <div>
-          <label class="block text-xs font-semibold text-gray-400 mb-1">Task Name</label>
-          <input type="text" id="task-name" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="Describe what you are learning/solving" required>
+          <label class="block text-xs font-semibold text-gray-400 mb-1">Topic Title</label>
+          <input type="text" id="task-name" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="Describe the topic you are learning" required>
         </div>
         <div class="grid grid-cols-2 gap-4">
           <div>
             <label class="block text-xs font-semibold text-gray-400 mb-1">Priority</label>
             <select id="task-priority" class="w-full glass-input rounded-lg px-3 py-2 text-sm bg-brand-navy">
-              <option value="Low">Low</option>
-              <option value="Medium">Medium</option>
-              <option value="High" selected>High</option>
+              <option value="🔥 Critical">🔥 Critical</option>
+              <option value="🟠 High" selected>🟠 High</option>
+              <option value="🟡 Medium">🟡 Medium</option>
+              <option value="⚪ Low">⚪ Low</option>
             </select>
           </div>
           <div>
             <label class="block text-xs font-semibold text-gray-400 mb-1">Difficulty</label>
             <select id="task-difficulty" class="w-full glass-input rounded-lg px-3 py-2 text-sm bg-brand-navy">
-              <option value="Easy">Easy</option>
-              <option value="Medium" selected>Medium</option>
-              <option value="Hard">Hard</option>
+              <option value="🟢 Easy">🟢 Easy</option>
+              <option value="🟡 Medium" selected>🟡 Medium</option>
+              <option value="🔴 Hard">🔴 Hard</option>
             </select>
           </div>
         </div>
         <div class="grid grid-cols-2 gap-4">
           <div>
-            <label class="block text-xs font-semibold text-gray-400 mb-1">Est. Hours</label>
-            <input type="number" step="0.5" id="task-est" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="2.0" required>
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Weight (1 to 8)</label>
+            <input type="number" min="1" max="8" id="task-weight" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="e.g. 5" required>
           </div>
           <div>
-            <label class="block text-xs font-semibold text-gray-400 mb-1">Act. Hours</label>
-            <input type="number" step="0.5" id="task-act" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="0.0">
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Learning Type</label>
+            <select id="task-learning-type" class="w-full glass-input rounded-lg px-3 py-2 text-sm bg-brand-navy">
+              <option value="📖 Read" selected>📖 Read</option>
+              <option value="🎥 Watch">🎥 Watch</option>
+              <option value="💻 Practice">💻 Practice</option>
+              <option value="🏗 Build">🏗 Build</option>
+              <option value="📝 Revise">📝 Revise</option>
+              <option value="🎤 Present">🎤 Present</option>
+              <option value="📚 Documentation">📚 Documentation</option>
+            </select>
           </div>
         </div>
         <div class="grid grid-cols-2 gap-4">
@@ -312,7 +321,7 @@
           </div>
           <div>
             <label class="block text-xs font-semibold text-gray-400 mb-1">Question to Practice</label>
-            <input type="text" id="task-question" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="e.g. LeetCode #175, StrataScratch #9">
+            <input type="text" id="task-practice" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="e.g. LeetCode #175, StrataScratch #9">
           </div>
         </div>
         <div>
@@ -334,7 +343,7 @@
         <h3 class="text-lg font-bold text-white font-['Outfit']" id="res-modal-title"><i class="fas fa-plus mr-2 text-brand-blue"></i>Add Resource</h3>
         <button onclick="closeModal('resource-modal')" class="text-gray-400 hover:text-white transition"><i class="fas fa-times"></i></button>
       </div>
-      <form id="resource-form" onsubmit="saveResource(event)" class="space-y-4">
+            <form id="resource-form" onsubmit="saveResource(event)" class="space-y-4">
         <input type="hidden" id="res-edit-id">
         <div>
           <label class="block text-xs font-semibold text-gray-400 mb-1">Resource Name</label>
@@ -346,17 +355,19 @@
             <input type="text" id="res-author" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="e.g. Dusty Phillips" required>
           </div>
           <div>
-            <label class="block text-xs font-semibold text-gray-400 mb-1">Type</label>
-            <select id="res-type" class="w-full glass-input rounded-lg px-3 py-2 text-sm bg-brand-navy">
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Category</label>
+            <select id="res-category" class="w-full glass-input rounded-lg px-3 py-2 text-sm bg-brand-navy">
               <option value="Book">Book</option>
               <option value="Course">Course</option>
-              <option value="Website">Website</option>
+              <option value="YouTube">YouTube</option>
               <option value="Documentation">Documentation</option>
-              <option value="Other">Other</option>
+              <option value="Practice">Practice</option>
+              <option value="Article">Article</option>
+              <option value="Research Paper">Research Paper</option>
             </select>
           </div>
         </div>
-        <div class="grid grid-cols-3 gap-4">
+        <div class="grid grid-cols-4 gap-4">
           <div>
             <label class="block text-xs font-semibold text-gray-400 mb-1">Difficulty</label>
             <select id="res-diff" class="w-full glass-input rounded-lg px-3 py-2 text-sm bg-brand-navy">
@@ -374,8 +385,17 @@
             </select>
           </div>
           <div>
-            <label class="block text-xs font-semibold text-gray-400 mb-1">Progress %</label>
-            <input type="number" min="0" max="100" id="res-progress" class="w-full glass-input rounded-lg px-3 py-2 text-sm" placeholder="0">
+            <label class="block text-xs font-semibold text-gray-400 mb-1">Type</label>
+            <select id="res-usage-type" class="w-full glass-input rounded-lg px-3 py-2 text-sm bg-brand-navy">
+              <option value="Primary" selected>Primary</option>
+              <option value="Secondary">Secondary</option>
+              <option value="Reference">Reference</option>
+              <option value="Optional">Optional</option>
+            </select>
+          </div>
+          <div class="flex items-center justify-center pt-5">
+            <input type="checkbox" id="res-completed" class="w-4 h-4 rounded text-brand-blue bg-brand-navy border-brand-border focus:ring-brand-blue focus:ring-opacity-25 cursor-pointer">
+            <label for="res-completed" class="ml-2 text-xs font-semibold text-gray-400">Done</label>
           </div>
         </div>
         <div>
