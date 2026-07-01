@@ -296,6 +296,53 @@ function addTopicToRevision(taskId) {
     renderApp();
   }
 }
+
+function init() {
+  const stored = localStorage.getItem("dsos_data");
+  if (stored) {
+    try {
+      state = JSON.parse(stored);
+      if (!state.modules && typeof DEFAULT_DATA !== 'undefined' && DEFAULT_DATA.modules) {
+        state.modules = DEFAULT_DATA.modules;
+      }
+    } catch (e) {
+      console.error("Error parsing localStorage data, resetting...", e);
+      state = JSON.parse(JSON.stringify(DEFAULT_DATA));
+    }
+  } else {
+    state = JSON.parse(JSON.stringify(DEFAULT_DATA));
+    saveState();
+  }
+  
+  if (!state.activeTab) {
+    state.activeTab = "dashboard";
+  }
+  
+  renderApp();
+}
+
+function saveState() {
+  localStorage.setItem("dsos_data", JSON.stringify(state));
+}
+
+function changeDomain(domainId) {
+  state.activeDomain = domainId;
+  if (domainId === "launcher") {
+    state.activeTab = "dashboard";
+  } else if (domainId === "master") {
+    state.activeTab = "home";
+  } else {
+    state.activeTab = "dashboard";
+  }
+  saveState();
+  renderApp();
+}
+
+function switchTab(tabId) {
+  state.activeTab = tabId;
+  saveState();
+  renderApp();
+}
 """
 
 # New renderLauncher replacement
