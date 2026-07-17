@@ -7,6 +7,9 @@ I vibe-coded this platform based on my personal way of learning: studying from *
 
 Currently, the roadmap covers **SQL, Python, Professional Communication, and Interview Prep**, with more modules on the way.
 
+here is the link to the site as well 
+https://entity079.github.io/DSOS/
+
 ---
 
 ## 📖 The Core Philosophy (My Learning Flow)
