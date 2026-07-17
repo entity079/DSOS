@@ -1,4 +1,3 @@
-
 # 🚀 DSOS (Data Science Operating System)
 
 Welcome to **DSOS**! This is a personalized, gamified Learning OS designed to transition your analytical career from standard roadmaps to job-ready execution. 
@@ -6,9 +5,6 @@ Welcome to **DSOS**! This is a personalized, gamified Learning OS designed to tr
 I vibe-coded this platform based on my personal way of learning: studying from **books**, practicing actively, and tracking progress in a structured, deliberate manner. I wanted to share this with anyone who shares this same learning habit!
 
 Currently, the roadmap covers **SQL, Python, Professional Communication, and Interview Prep**, with more modules on the way.
-
-here is the link to the site as well 
-https://entity079.github.io/DSOS/
 
 ---
 
@@ -20,7 +16,20 @@ Most roadmaps tell you *what* to learn, but not *how* to retain it. DSOS is stru
 
 ---
 
+## 🎓 What's Inside?
 
+### 1️⃣ Core Tech Stacks
+* **SQL & Python Workspaces:** Structured modules covering syntax, execution, and projects.
+
+### 2️⃣ Professional Communication University (`prof_comm`)
+* **Focus:** Presentations, documentation, data storytelling, and business writing.
+- **💡 "Explain Like..." Widget:** Select a topic and instantly toggle explanations tailored for a **Child, Friend, Recruiter, Manager, CEO, or Data Scientist** to practice adapting technical communication styles.
+
+### 3️⃣ Interview Excellence University (`interview_prep`)
+* **Focus:** STAR stories mapping, career positioning, and negotiations.
+- **🎙 Live Simulator Mode:** Test your composure with timed mock interview prompts, real-time responses, performance evaluation scores, and feedback loops.
+
+---
 
 ## 📥 How to Run Locally
 
@@ -37,4 +46,3 @@ Since DSOS is a serverless Single Page Application (SPA), there's no backend con
 
 ## 💬 Recommendations & Feedback
 This page is open for improvements! Whether you have suggestions for new book mappings, feature recommendations, or styling adjustments, feel free to open a Pull Request or drop an issue on our [GitHub Repo](https://github.com/entity079/DSOS.git). Let's build a better way to learn together!
-```
