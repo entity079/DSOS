@@ -460,7 +460,7 @@ function renderSidebar() {
     const tabs = [
       { id: "home", label: "Home Dashboard", icon: "fas fa-home" },
       { id: "projects-tracker", label: "Project Portfolio", icon: "fas fa-folder-open" },
-      { id: "resources-tracker", label: "Resource Library", icon: "fas fa-book-reader" },
+      { id: "resources-tracker", label: "Global Learning Hub", icon: "fas fa-cubes" },
       { id: "applications-tracker", label: "Job Applications", icon: "fas fa-file-invoice-dollar" },
       { id: "interviews-tracker", label: "Interview Rounds", icon: "fas fa-comments" },
       { id: "second-brain-tracker", label: "Second Brain Notes", icon: "fas fa-brain" },
@@ -481,7 +481,7 @@ function renderSidebar() {
     const tabs = [
       { id: "dashboard", label: "Home Dashboard", icon: "fas fa-home" },
       { id: "tasks", label: "Task List", icon: "fas fa-tasks" },
-      { id: "resources", label: "Resources", icon: "fas fa-book-open" },
+      { id: "resources", label: "Learning Hub", icon: "fas fa-cubes" },
       { id: "interviews", label: "Interview Questions", icon: "fas fa-question-circle" },
       { id: "projects", label: "Projects", icon: "fas fa-project-diagram" },
       { id: "cases", label: "Case Studies", icon: "fas fa-briefcase" },
@@ -514,7 +514,7 @@ function renderContent() {
     switch (state.activeTab) {
       case "home": renderMasterHome(container); break;
       case "projects-tracker": renderMasterProjects(container); break;
-      case "resources-tracker": renderMasterResources(container); break;
+      case "resources-tracker": renderMasterLearningHub(container); break;
       case "applications-tracker": renderMasterApplications(container); break;
       case "interviews-tracker": renderMasterInterviews(container); break;
       case "second-brain-tracker": renderMasterSecondBrain(container); break;
@@ -526,7 +526,7 @@ function renderContent() {
     switch (state.activeTab) {
       case "dashboard": renderDomainDashboard(container); break;
       case "tasks": renderDomainTasks(container); break;
-      case "resources": renderDomainResources(container); break;
+      case "resources": renderLearningHub(container); break;
       case "interviews": renderDomainInterviews(container); break;
       case "projects": renderDomainProjects(container); break;
       case "cases": renderDomainCases(container); break;
@@ -966,65 +966,193 @@ function deleteResource(id) {
 }
 
 
-// --- DOMAIN RESOURCES VIEW ---
+
+// --- DOMAIN LEARNING HUB V2 ---
+let activeHubCategory = "learn";
+
+function switchHubCategory(cat) {
+  activeHubCategory = cat;
+  const container = document.getElementById("content-pane");
+  renderDomainResources(container);
+}
+
+function renderLearningHub(container) {
+  renderDomainResources(container);
+}
+
 function renderDomainResources(container) {
   const domainRes = state.resources.filter(r => r.domain === state.activeDomain);
   
-  let rows = "";
-  domainRes.forEach(r => {
-    const isChecked = r.completed === true ? "checked" : "";
-    rows += `
-      <tr class="hover:bg-brand-dark/20 border-b border-brand-border/60 transition">
-        <td class="px-4 py-3 text-center">
-          <input type="checkbox" ${isChecked} onchange="toggleResource('${r.id}', this.checked)" class="w-4 h-4 rounded text-brand-blue bg-brand-navy border-brand-border focus:ring-brand-blue focus:ring-opacity-25 cursor-pointer">
-        </td>
-        <td class="px-4 py-3 text-sm text-white font-bold">${r.name || r.title}</td>
-        <td class="px-4 py-3 text-xs text-brand-blue font-bold uppercase">${r.category || r.type}</td>
-        <td class="px-4 py-3 text-xs text-gray-400 font-semibold">${r.provider || r.author || 'N/A'}</td>
-        <td class="px-4 py-3 text-xs font-semibold text-gray-400">${r.difficulty}</td>
-        <td class="px-4 py-3 text-xs font-mono text-amber-500 font-bold">${r.priority}</td>
-        <td class="px-4 py-3 text-xs text-gray-400 max-w-xs truncate" title="${r.notes || ''}">${r.notes || 'N/A'}</td>
-        <td class="px-4 py-3 text-xs text-right">
-          <button onclick="editResourceModal('${r.id}')" class="text-brand-blue hover:text-white transition mr-2.5"><i class="fas fa-edit"></i></button>
-          <button onclick="deleteResource('${r.id}')" class="text-gray-600 hover:text-rose-500 transition"><i class="fas fa-trash"></i></button>
-        </td>
-      </tr>
+  // Filter by category tabs mapping:
+  // learn: Book, Documentation, Article, Research Paper
+  // watch: Course, YouTube
+  // practice: Practice, Practice Platform
+  // build: Capstone, Project, Mini Project
+  // explore: Industry Read, Blog, News
+  // interview: Interview Resource, Question Bank
+  // revise: Cheat Sheet, Flashcard
+  
+  const categoryFilters = {
+    learn: ["book", "documentation", "article", "research paper"],
+    watch: ["course", "youtube"],
+    practice: ["practice", "practice platform", "website"],
+    build: ["capstone", "project", "mini project"],
+    explore: ["industry read", "blog", "news", "industry"],
+    interview: ["interview resource", "question bank", "interview"],
+    revise: ["cheat sheet", "flashcard", "cheat"]
+  };
+  
+  const allowedCategories = categoryFilters[activeHubCategory] || [];
+  const filteredRes = domainRes.filter(r => {
+    const resCat = (r.category || r.type || "").toLowerCase();
+    return allowedCategories.some(allowed => resCat.includes(allowed));
+  });
+
+  let cardsHtml = "";
+  filteredRes.forEach(r => {
+    const isCompleted = r.completed === true;
+    const completedBadge = isCompleted ? 
+      `<span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-500 font-bold text-[9px] border border-emerald-500/20"><i class="fas fa-check-circle mr-1"></i>Completed</span>` :
+      `<span class="px-2 py-0.5 rounded bg-gray-500/10 text-gray-400 font-bold text-[9px] border border-brand-border"><i class="fas fa-circle mr-1"></i>Active</span>`;
+    
+    // Custom Stats Layout for Practice Platforms
+    let statsSection = "";
+    const isPracticePlatform = activeHubCategory === "practice";
+    if (isPracticePlatform) {
+      const savedStats = r.practiceStats || { solved: 0, total: 100, accuracy: 80 };
+      statsSection = `
+        <div class="mt-3 pt-3 border-t border-brand-border/60 text-[11px] space-y-2">
+          <div class="flex justify-between items-center text-gray-400">
+            <span>Questions Solved:</span>
+            <div class="flex items-center space-x-1">
+              <input type="number" id="solved-stats-${r.id}" value="${savedStats.solved}" onchange="savePracticeStats('${r.id}')" class="w-12 bg-brand-dark border border-brand-border rounded px-1.5 py-0.5 text-center text-white text-[10px]">
+              <span>/</span>
+              <input type="number" id="total-stats-${r.id}" value="${savedStats.total}" onchange="savePracticeStats('${r.id}')" class="w-12 bg-brand-dark border border-brand-border rounded px-1.5 py-0.5 text-center text-white text-[10px]">
+            </div>
+          </div>
+          <div class="flex justify-between items-center text-gray-400">
+            <span>Accuracy Rate:</span>
+            <div class="flex items-center space-x-1">
+              <input type="number" id="accuracy-stats-${r.id}" value="${savedStats.accuracy}" onchange="savePracticeStats('${r.id}')" class="w-12 bg-brand-dark border border-brand-border rounded px-1.5 py-0.5 text-center text-white text-[10px]">
+              <span class="text-[9px] font-bold">%</span>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    cardsHtml += `
+      <div class="glass-card p-5 rounded-2xl border border-brand-border hover:border-brand-blue/30 transition flex flex-col justify-between space-y-4">
+        <div class="space-y-2">
+          <div class="flex justify-between items-center">
+            <span class="text-[9px] uppercase font-bold text-brand-blue tracking-wider bg-brand-navy/60 px-2 py-0.5 rounded border border-brand-border">${r.category || r.type}</span>
+            ${completedBadge}
+          </div>
+          <h3 class="font-bold text-white text-sm tracking-tight leading-snug truncate" title="${r.name || r.title}">${r.name || r.title}</h3>
+          <p class="text-[11px] text-gray-400 font-medium truncate"><span class="text-gray-500">Author:</span> ${r.provider || r.author || 'N/A'}</p>
+          <p class="text-[11px] text-gray-400 leading-relaxed line-clamp-2">${r.purpose || r.notes || 'No description provided.'}</p>
+          
+          ${statsSection}
+        </div>
+        
+        <div class="flex justify-between items-center pt-3 border-t border-brand-border/60">
+          <div class="flex space-x-1.5 text-[9px] text-gray-500 font-bold uppercase">
+            <span class="text-amber-500">${r.priority}</span>
+            <span>•</span>
+            <span>${r.difficulty}</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <button onclick="toggleResourceCompletion('${r.id}', ${!isCompleted})" class="bg-brand-navy border border-brand-border hover:border-brand-blue/50 text-[10px] text-white font-bold px-2.5 py-1 rounded-lg transition">
+              ${isCompleted ? 'Mark Active' : 'Mark Completed'}
+            </button>
+            <button onclick="editResourceModal('${r.id}')" class="text-gray-500 hover:text-white transition text-xs"><i class="fas fa-edit"></i></button>
+            <button onclick="deleteResource('${r.id}')" class="text-gray-500 hover:text-rose-500 transition text-xs"><i class="fas fa-trash"></i></button>
+          </div>
+        </div>
+      </div>
     `;
   });
-  
+
+  const categories = [
+    { id: "learn", label: "📚 Learn", count: domainRes.filter(r => categoryFilters.learn.some(c => (r.category||r.type||"").toLowerCase().includes(c))).length },
+    { id: "watch", label: "🎥 Watch", count: domainRes.filter(r => categoryFilters.watch.some(c => (r.category||r.type||"").toLowerCase().includes(c))).length },
+    { id: "practice", label: "💻 Practice", count: domainRes.filter(r => categoryFilters.practice.some(c => (r.category||r.type||"").toLowerCase().includes(c))).length },
+    { id: "build", label: "🏗 Build", count: domainRes.filter(r => categoryFilters.build.some(c => (r.category||r.type||"").toLowerCase().includes(c))).length },
+    { id: "explore", label: "🌍 Explore", count: domainRes.filter(r => categoryFilters.explore.some(c => (r.category||r.type||"").toLowerCase().includes(c))).length },
+    { id: "interview", label: "🎯 Interview", count: domainRes.filter(r => categoryFilters.interview.some(c => (r.category||r.type||"").toLowerCase().includes(c))).length },
+    { id: "revise", label: "📄 Revise", count: domainRes.filter(r => categoryFilters.revise.some(c => (r.category||r.type||"").toLowerCase().includes(c))).length }
+  ];
+
+  let tabHeaders = "";
+  categories.forEach(cat => {
+    const isActive = activeHubCategory === cat.id;
+    const activeClass = isActive ? "bg-brand-blue border-brand-blue text-white shadow-md shadow-brand-blue/20" : "bg-brand-navy border-brand-border text-gray-400 hover:text-white";
+    tabHeaders += `
+      <button onclick="switchHubCategory('${cat.id}')" class="px-3.5 py-2 rounded-xl text-xs font-bold border transition flex items-center space-x-1.5 ${activeClass}">
+        <span>${cat.label}</span>
+        <span class="text-[9px] font-mono opacity-80 bg-brand-dark/50 px-1.5 py-0.5 rounded">${cat.count}</span>
+      </button>
+    `;
+  });
+
   container.innerHTML = `
     <div class="space-y-6 animate-fadeIn">
       <div class="flex justify-between items-center">
         <div>
-          <h2 class="text-2xl font-extrabold text-white tracking-tight font-['Outfit']">Domain Resource Library</h2>
-          <p class="text-gray-400 text-xs mt-1">Recommended reading lists, books, and courses mapped specifically to this domain.</p>
+          <h2 class="text-2xl font-extrabold text-white tracking-tight font-['Outfit']">Interactive Learning Hub</h2>
+          <p class="text-gray-400 text-xs mt-1">Multi-modal resource libraries containing books, tutorials, sandboxes, and practice tools.</p>
         </div>
+        <button onclick="addResourceModal()" class="bg-brand-blue hover:bg-brand-hover text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-lg shadow-brand-blue/20">
+          <i class="fas fa-plus mr-1.5"></i> Add Resource
+        </button>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="flex flex-wrap gap-2 pb-1 border-b border-brand-border/60">
+        ${tabHeaders}
       </div>
       
-      <div class="glass-card p-6 rounded-2xl overflow-hidden">
-        <div class="overflow-x-auto custom-scroll border border-brand-border rounded-xl">
-          <table class="w-full text-left border-collapse">
-            <thead>
-              <tr class="border-b border-brand-border bg-brand-navy/60">
-                <th class="px-4 py-3 text-xs text-gray-400 font-bold uppercase text-center w-16">Done</th>
-                <th class="px-4 py-3 text-xs text-gray-400 font-bold uppercase">Resource Title</th>
-                <th class="px-4 py-3 text-xs text-gray-400 font-bold uppercase">Type</th>
-                <th class="px-4 py-3 text-xs text-gray-400 font-bold uppercase">Author/Provider</th>
-                <th class="px-4 py-3 text-xs text-gray-400 font-bold uppercase">Difficulty</th>
-                <th class="px-4 py-3 text-xs text-gray-400 font-bold uppercase">Priority</th>
-                <th class="px-4 py-3 text-xs text-gray-400 font-bold uppercase">Notes</th>
-                <th class="px-4 py-3 text-xs text-gray-400 font-bold uppercase text-right">Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-              ${rows || `<tr><td colspan="8" class="px-6 py-4 text-center text-sm text-gray-500 font-medium">No resources linked to this domain.</td></tr>`}
-            </tbody>
-          </table>
-        </div>
+      <!-- Resource Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        ${cardsHtml || `<div class="col-span-3 text-center py-12 text-gray-500 font-medium">No resources linked in this hub category. click Add Resource above!</div>`}
       </div>
     </div>
   `;
 }
+
+function toggleResourceCompletion(resId, isDone) {
+  const res = state.resources.find(r => r.id === resId);
+  if (res) {
+    res.completed = isDone;
+    res.progress = isDone ? 100 : 0;
+    saveState();
+    renderApp();
+  }
+}
+
+function savePracticeStats(resId) {
+  const res = state.resources.find(r => r.id === resId);
+  if (res) {
+    const solvedInput = document.getElementById("solved-stats-" + resId);
+    const totalInput = document.getElementById("total-stats-" + resId);
+    const accuracyInput = document.getElementById("accuracy-stats-" + resId);
+    
+    res.practiceStats = {
+      solved: solvedInput ? parseInt(solvedInput.value || 0) : 0,
+      total: totalInput ? parseInt(totalInput.value || 100) : 100,
+      accuracy: accuracyInput ? parseInt(accuracyInput.value || 80) : 80
+    };
+    saveState();
+  }
+}
+
+function addResourceModal() {
+  document.getElementById("resource-modal-form").reset();
+  document.getElementById("res-edit-id").value = "";
+  document.getElementById("res-modal-title").innerHTML = `<i class="fas fa-plus mr-2 text-brand-blue"></i>Add Resource`;
+  document.getElementById("resource-modal").classList.remove("hidden");
+}
+
 
 function toggleResource(resId, isChecked) {
   const res = state.resources.find(r => r.id === resId);
@@ -1904,6 +2032,11 @@ function renderMasterProjects(container) {
       </div>
     </div>
   `;
+}
+
+
+function renderMasterLearningHub(container) {
+  renderMasterResources(container);
 }
 
 function renderMasterResources(container) {
