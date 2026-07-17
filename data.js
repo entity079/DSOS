@@ -521,219 +521,322 @@ const DEFAULT_DATA = {
       ]
     },
     {
-      "id": "mod_comm_0",
-      "domain": "communication",
-      "title": "Module 0: Professional English Foundation",
-      "description": "Business communication grammar, tone adjustments, vocabulary mapping, and writing clear emails.",
+      "id": "mod_pc_0",
+      "domain": "prof_comm",
+      "title": "Module 0: Speaking",
+      "description": "Speaking foundations and reducing conversational filler words.",
+      "estimatedHours": 10,
+      "interviewWeight": 4,
+      "outcomes": [
+        "Reduce filler words",
+        "Speak clearly",
+        "Pacing"
+      ],
+      "prerequisites": [],
+      "deliverables": [
+        "Recorded audio speech"
+      ],
+      "masteryChecklist": [
+        "No filler words",
+        "Pacing control"
+      ]
+    },
+    {
+      "id": "mod_pc_1",
+      "domain": "prof_comm",
+      "title": "Module 1: Writing",
+      "description": "Professional emails and concise async Slack communication.",
       "estimatedHours": 12,
       "interviewWeight": 3,
       "outcomes": [
-        "✓ Write clear business sentences",
-        "✓ Apply professional tone in updates",
-        "✓ Avoid common spelling grammar traps"
+        "Concise emails",
+        "Slack updates"
       ],
-      "prerequisites": [
-        "English foundations"
-      ],
+      "prerequisites": [],
       "deliverables": [
-        "Drafted vocabulary reference guide"
+        "Email drafts"
       ],
       "masteryChecklist": [
-        "Can compose brief updates",
-        "Can avoid common run-on traps",
-        "Can target active writing tones"
+        "Construct professional emails",
+        "Slack status reports"
       ]
     },
     {
-      "id": "mod_comm_1",
-      "domain": "communication",
-      "title": "Module 1: Professional Speaking",
-      "description": "Elevator pitches structures (30s/60s/2m), analogical descriptions for non-technical managers, and filler words reduction.",
-      "estimatedHours": 15,
-      "interviewWeight": 5,
-      "outcomes": [
-        "✓ Present elevator self-introductions (30s/60s/2m)",
-        "✓ Explain complex algorithms to non-tech people",
-        "✓ Eradicate filler words from pitches"
-      ],
-      "prerequisites": [
-        "General speaking basics"
-      ],
-      "deliverables": [
-        "Self introduction pitches audio transcripts"
-      ],
-      "masteryChecklist": [
-        "Can deliver 60s elevator pitch",
-        "Can explain ML regressions simply",
-        "Can limit filler words to <2 per minute"
-      ]
-    },
-    {
-      "id": "mod_comm_2",
-      "domain": "communication",
-      "title": "Module 2: Business Communication",
-      "description": "Agenda-driven updates format, async Slack summaries, and escalating blockages models.",
+      "id": "mod_pc_2",
+      "domain": "prof_comm",
+      "title": "Module 2: Presentations",
+      "description": "Structuring a compelling visual narrative slide deck.",
       "estimatedHours": 15,
       "interviewWeight": 4,
       "outcomes": [
-        "✓ Write professional status updates",
-        "✓ Structure agenda and follow-up templates",
-        "✓ Escalate blockages clearly to leads"
+        "Narrative slide decks",
+        "Pyramid principle"
       ],
-      "prerequisites": [
-        "Email writing basics"
-      ],
+      "prerequisites": [],
       "deliverables": [
-        "SOP Communication template library"
+        "Visual slide presentation"
       ],
       "masteryChecklist": [
-        "Can write structured status reports",
-        "Can write constructive feedback reviews",
-        "Can escalate blockers using mitigation options"
+        "Design slide hierarchy",
+        "Visual explanations"
       ]
     },
     {
-      "id": "mod_comm_3",
-      "domain": "communication",
-      "title": "Module 3: Storytelling with Data",
-      "description": "Dashboard slide designs, visual hierarchies, and presenting KPIs to executives.",
-      "estimatedHours": 20,
-      "interviewWeight": 5,
+      "id": "mod_pc_3",
+      "domain": "prof_comm",
+      "title": "Module 3: Documentation",
+      "description": "Markdown documentation structure and clean repository READMEs.",
+      "estimatedHours": 15,
+      "interviewWeight": 4,
       "outcomes": [
-        "✓ Design visual dashboard slide structures",
-        "✓ Highlight insights using visual hierarchy",
-        "✓ Present metric recommendations to VPs"
+        "Markdown documents",
+        "Clean READMEs"
       ],
-      "prerequisites": [
-        "Charts creation basics"
-      ],
+      "prerequisites": [],
       "deliverables": [
-        "Executive slide presentation deck"
+        "README.md files"
       ],
       "masteryChecklist": [
-        "Can layout slides minimalists structure",
-        "Can choose optimal chart properties",
-        "Can design dashboard explanations for CEOs"
+        "Create clean markdown README",
+        "API response examples docs"
       ]
     },
     {
-      "id": "mod_comm_4",
-      "domain": "communication",
-      "title": "Module 4: Technical Writing",
-      "description": "Unified repository layouts, markdown files documentation, and clear python docstrings rules.",
+      "id": "mod_pc_4",
+      "domain": "prof_comm",
+      "title": "Module 4: Data Storytelling",
+      "description": "Translating modeling metrics into business dollars.",
       "estimatedHours": 18,
       "interviewWeight": 5,
       "outcomes": [
-        "✓ Overhaul repo README files",
-        "✓ Document API endpoints and structures",
-        "✓ Write clear python code docstrings"
+        "Metric translation",
+        "Storytelling with Data"
       ],
-      "prerequisites": [
-        "Markdown basics"
-      ],
+      "prerequisites": [],
       "deliverables": [
-        "Professional GitHub repository README.md"
+        "Executive presentation deck"
       ],
       "masteryChecklist": [
-        "Can compose clean markdown files",
-        "Can document API payloads formats",
-        "Can write why-centered code comments"
+        "Translate precision/recall metrics",
+        "ROI models design"
       ]
     },
     {
-      "id": "mod_comm_5",
-      "domain": "communication",
-      "title": "Module 5: Interview Communication Lab",
-      "description": "STAR behavioral method, project architecture walkthroughs, and thinking aloud during live reviews.",
+      "id": "mod_pc_5",
+      "domain": "prof_comm",
+      "title": "Module 5: Business Communication",
+      "description": "Managing stakeholder alignments, conflicts, and expectations.",
       "estimatedHours": 20,
       "interviewWeight": 5,
       "outcomes": [
-        "✓ Formulate STAR behavioral summaries",
-        "✓ Explain SQL/Python projects clearly",
-        "✓ Think aloud during live coding reviews"
+        "Stakeholder alignments",
+        "Crucial conversations"
       ],
-      "prerequisites": [
-        "All python/SQL projects built"
-      ],
+      "prerequisites": [],
       "deliverables": [
-        "STAR interview answers template log"
+        "Strategy document"
       ],
       "masteryChecklist": [
-        "Can structure STAR answers under 2m",
-        "Can walk through database optimizations simply",
-        "Can articulate coding logics out loud"
+        "Defend data decision with evidence",
+        "Resolve alignments conflicts"
       ]
     },
     {
-      "id": "mod_comm_6",
-      "domain": "communication",
-      "title": "Module 6: Data Storytelling",
-      "description": "Mece issue trees root cause analytics, confidence levels presentations, and business recommendations formatting.",
+      "id": "mod_ip_0",
+      "domain": "interview_prep",
+      "title": "Module 0: Interview Foundations",
+      "description": "Overview of interview structures (HR, Tech, Managerial, Case Study, Systems).",
+      "estimatedHours": 8,
+      "interviewWeight": 3,
+      "outcomes": [
+        "Understand interview channels"
+      ],
+      "prerequisites": [],
+      "deliverables": [
+        "Interview funnel checklist"
+      ],
+      "masteryChecklist": [
+        "Distinguish interviewer roles",
+        "OA guidelines check"
+      ]
+    },
+    {
+      "id": "mod_ip_1",
+      "domain": "interview_prep",
+      "title": "Module 1: Personal Branding",
+      "description": "Formulating elevator pitches, tell me about yourself hooks, and resume walks.",
+      "estimatedHours": 12,
+      "interviewWeight": 5,
+      "outcomes": [
+        "90s elevator pitch",
+        "Resume walk"
+      ],
+      "prerequisites": [],
+      "deliverables": [
+        "Introduction video or speech"
+      ],
+      "masteryChecklist": [
+        "Pitch under 90s",
+        "Highlights hook points"
+      ]
+    },
+    {
+      "id": "mod_ip_2",
+      "domain": "interview_prep",
+      "title": "Module 2: Behavioral Interviews",
+      "description": "Mastering STAR structure and building a versatile 20-story bank.",
       "estimatedHours": 20,
       "interviewWeight": 5,
       "outcomes": [
-        "✓ Extract insights from database queries",
-        "✓ Present precision vs recall in cost terms",
-        "✓ Write strategic executive recommendations"
+        "STAR stories",
+        "Behavioral questions response"
       ],
-      "prerequisites": [
-        "Business KPI mappings"
-      ],
+      "prerequisites": [],
       "deliverables": [
-        "Business Case Presentation deck"
+        "20 STAR Story Bank"
       ],
       "masteryChecklist": [
-        "Can design MECE root cause issue trees",
-        "Can explain model precision cost impact",
-        "Can draft executive summaries report"
+        "Structure STAR answers in under 2m",
+        "Quantified results verification"
       ]
     },
     {
-      "id": "mod_comm_7",
-      "domain": "communication",
-      "title": "Module 7: Presentation Skills",
-      "description": "Visual slide layouts, handling stakeholder queries, and presenting capstone projects.",
+      "id": "mod_ip_3",
+      "domain": "interview_prep",
+      "title": "Module 3: Technical Communication",
+      "description": "Explaining coding, algorithms, and math concepts to diverse stakeholders.",
+      "estimatedHours": 15,
+      "interviewWeight": 5,
+      "outcomes": [
+        "Technical communication",
+        "Concept translation"
+      ],
+      "prerequisites": [],
+      "deliverables": [
+        "Stakeholder explainers document"
+      ],
+      "masteryChecklist": [
+        "Explain indexes to child vs CEO",
+        "Use analogies to describe modeling"
+      ]
+    },
+    {
+      "id": "mod_ip_4",
+      "domain": "interview_prep",
+      "title": "Module 4: Project Defense",
+      "description": "Answering Problem, Why, Alternatives, and Trade-offs for built projects.",
+      "estimatedHours": 20,
+      "interviewWeight": 5,
+      "outcomes": [
+        "Project defense",
+        "Architecture tradeoffs"
+      ],
+      "prerequisites": [],
+      "deliverables": [
+        "Architecture defense slides"
+      ],
+      "masteryChecklist": [
+        "Defend model and feature choice",
+        "Define limits and improvements"
+      ]
+    },
+    {
+      "id": "mod_ip_5",
+      "domain": "interview_prep",
+      "title": "Module 5: Case Studies",
+      "description": "Solving business case studies (Netflix, Uber, Swiggy) via structured frameworks.",
+      "estimatedHours": 20,
+      "interviewWeight": 5,
+      "outcomes": [
+        "Solve business cases",
+        "Issue trees structuring"
+      ],
+      "prerequisites": [],
+      "deliverables": [
+        "Case study logs"
+      ],
+      "masteryChecklist": [
+        "Create MECE issue tree",
+        "Pick product metrics framework"
+      ]
+    },
+    {
+      "id": "mod_ip_6",
+      "domain": "interview_prep",
+      "title": "Module 6: Mock Interviews",
+      "description": "Weekly mock interviews tracking Speed, Accuracy, Confidence, and Eye Contact.",
+      "estimatedHours": 15,
+      "interviewWeight": 5,
+      "outcomes": [
+        "Mock practice",
+        "Behavioral performance audit"
+      ],
+      "prerequisites": [],
+      "deliverables": [
+        "Mock interview scorecard log"
+      ],
+      "masteryChecklist": [
+        "Maintain mock score > 80%",
+        "Eradicate pacing anomalies"
+      ]
+    },
+    {
+      "id": "mod_ip_7",
+      "domain": "interview_prep",
+      "title": "Module 7: Company Tracks",
+      "description": "Deep dives into company formats and patterns (Google, Amex, Swiggy).",
       "estimatedHours": 15,
       "interviewWeight": 4,
       "outcomes": [
-        "✓ Design slides with clear visual hierarchies",
-        "✓ Speak confidently with presentations",
-        "✓ Respond cleanly to unexpected queries"
+        "Company patterns maps"
       ],
-      "prerequisites": [
-        "PowerPoint design basics"
-      ],
+      "prerequisites": [],
       "deliverables": [
-        "Kaggle analysis presentation deck"
+        "Target playbooks profiles"
       ],
       "masteryChecklist": [
-        "Can structure presentations narrative flow",
-        "Can keep slides presentation timing limits",
-        "Can redirect unexpected questions cleanly"
+        "Outline top target focus area",
+        "Complete OAs sample checks"
       ]
     },
     {
-      "id": "mod_comm_8",
-      "domain": "communication",
-      "title": "Module 8: Personal Brand",
-      "description": "LinkedIn profile sections, GitHub contributions README, and resume layouts emphasizing impact.",
-      "estimatedHours": 15,
-      "interviewWeight": 5,
+      "id": "mod_ip_8",
+      "domain": "interview_prep",
+      "title": "Module 8: Salary & Negotiation",
+      "description": "Strategies for HR salary questions, offer comparisons, and counters.",
+      "estimatedHours": 10,
+      "interviewWeight": 4,
       "outcomes": [
-        "✓ Optimize LinkedIn bio and headers",
-        "✓ Frame resumes highlighting money impacts",
-        "✓ Deploy technical blogging posts"
+        "HR negotiation",
+        "Compensation comparisons"
       ],
-      "prerequisites": [
-        "GitHub portfolio repositories list"
-      ],
+      "prerequisites": [],
       "deliverables": [
-        "Optimized LinkedIn profile and Resume"
+        "Negotiation scripts"
       ],
       "masteryChecklist": [
-        "Can format resume items using dollar impact metrics",
-        "Can update LinkedIn profiles summary",
-        "Can write technical blog updates"
+        "Respond to salary expectation",
+        "Evaluate offers equity components"
+      ]
+    },
+    {
+      "id": "mod_ip_9",
+      "domain": "interview_prep",
+      "title": "Module 9: Offer Readiness",
+      "description": "Pre-placement strategy audits making sure all tracks are green.",
+      "estimatedHours": 8,
+      "interviewWeight": 5,
+      "outcomes": [
+        "Readiness audit",
+        "Placement prep"
+      ],
+      "prerequisites": [],
+      "deliverables": [
+        "System readiness scorecard"
+      ],
+      "masteryChecklist": [
+        "Resolve final weak areas",
+        "Verify resume links are active"
       ]
     }
   ],
@@ -813,13 +916,22 @@ const DEFAULT_DATA = {
       "hours": 0
     },
     {
-      "id": "communication",
-      "name": "Professional Communication & Business Influence",
-      "modulesCount": 9,
-      "hours": 85,
-      "progress": 0,
+      "id": "prof_comm",
+      "name": "Professional Communication University",
       "icon": "fas fa-comments",
-      "desc": "Develop communication, storytelling, documentation, interview, and business presentation skills for Data Analysts and Data Scientists."
+      "desc": "Focus on speaking, writing, presentations, technical documentation, data storytelling, and business communication.",
+      "modulesCount": 6,
+      "progress": 0,
+      "hours": 0
+    },
+    {
+      "id": "interview_prep",
+      "name": "Interview Excellence University",
+      "icon": "fas fa-user-tie",
+      "desc": "STAR behavior preparation, project defense frameworks, company tracks, case studies, and live mock interview simulations.",
+      "modulesCount": 10,
+      "progress": 0,
+      "hours": 0
     },
     {
       "id": "dsa",
@@ -6483,640 +6595,24 @@ const DEFAULT_DATA = {
       "mastery": "⚪ Beginner"
     },
     {
-      "id": "comm_001",
-      "domain": "communication",
+      "id": "t_pc_0",
+      "domain": "prof_comm",
       "module": "Module 0",
-      "submodule": "Professional English Foundation",
-      "title": "Professional Grammar",
-      "learningType": "📖 Read",
-      "priority": "🟠 High",
-      "difficulty": "Easy",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Professional Grammar.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Professional Grammar correctly in production environments",
-        "✓ Answer key technical interview questions regarding Professional Grammar"
-      ],
-      "weight": 2,
-      "interviewFrequency": "★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "HBR Guide to Better Business Writing",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Professional Grammar Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Professional Grammar in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Professional Grammar?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Professional Grammar to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Professional Grammar?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_002",
-      "domain": "communication",
-      "module": "Module 0",
-      "submodule": "Professional English Foundation",
-      "title": "Sentence Structure",
-      "learningType": "📖 Read",
-      "priority": "🟠 High",
-      "difficulty": "Easy",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Sentence Structure.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Sentence Structure correctly in production environments",
-        "✓ Answer key technical interview questions regarding Sentence Structure"
-      ],
-      "weight": 2,
-      "interviewFrequency": "★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "HBR Guide to Better Business Writing",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Sentence Structure Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Sentence Structure in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Sentence Structure?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Sentence Structure to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Sentence Structure?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_003",
-      "domain": "communication",
-      "module": "Module 0",
-      "submodule": "Professional English Foundation",
-      "title": "Business Vocabulary",
-      "learningType": "📖 Read",
-      "priority": "🟠 High",
-      "difficulty": "Easy",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Business Vocabulary.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Business Vocabulary correctly in production environments",
-        "✓ Answer key technical interview questions regarding Business Vocabulary"
-      ],
-      "weight": 2,
-      "interviewFrequency": "★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "HBR Guide to Better Business Writing",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Business Vocabulary Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Business Vocabulary in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Business Vocabulary?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Business Vocabulary to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Business Vocabulary?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_004",
-      "domain": "communication",
-      "module": "Module 0",
-      "submodule": "Professional English Foundation",
-      "title": "Technical Vocabulary",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Technical Vocabulary.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Technical Vocabulary correctly in production environments",
-        "✓ Answer key technical interview questions regarding Technical Vocabulary"
-      ],
-      "weight": 3,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Google Technical Writing",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Technical Vocabulary Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Technical Vocabulary in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Technical Vocabulary?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Technical Vocabulary to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Technical Vocabulary?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_005",
-      "domain": "communication",
-      "module": "Module 0",
-      "submodule": "Professional English Foundation",
-      "title": "Writing Clearly",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Writing Clearly.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Writing Clearly correctly in production environments",
-        "✓ Answer key technical interview questions regarding Writing Clearly"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "The Pyramid Principle",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Writing Clearly Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Writing Clearly in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Writing Clearly?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Writing Clearly to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Writing Clearly?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_006",
-      "domain": "communication",
-      "module": "Module 0",
-      "submodule": "Professional English Foundation",
-      "title": "Avoiding Common Grammar Mistakes",
-      "learningType": "📖 Read",
-      "priority": "🟠 High",
-      "difficulty": "Easy",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Avoiding Common Grammar Mistakes.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Avoiding Common Grammar Mistakes correctly in production environments",
-        "✓ Answer key technical interview questions regarding Avoiding Common Grammar Mistakes"
-      ],
-      "weight": 2,
-      "interviewFrequency": "★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "HBR Guide to Better Business Writing",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Avoiding Common Grammar Mistakes Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Avoiding Common Grammar Mistakes in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Avoiding Common Grammar Mistakes?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Avoiding Common Grammar Mistakes to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Avoiding Common Grammar Mistakes?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_007",
-      "domain": "communication",
-      "module": "Module 0",
-      "submodule": "Professional English Foundation",
-      "title": "Professional Tone",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Professional Tone.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Professional Tone correctly in production environments",
-        "✓ Answer key technical interview questions regarding Professional Tone"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "HBR Guide to Better Business Writing",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Professional Tone Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Professional Tone in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Professional Tone?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Professional Tone to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Professional Tone?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_008",
-      "domain": "communication",
-      "module": "Module 0",
-      "submodule": "Professional English Foundation",
-      "title": "Email Vocabulary",
-      "learningType": "📖 Read",
-      "priority": "🟠 High",
-      "difficulty": "Easy",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Email Vocabulary.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Email Vocabulary correctly in production environments",
-        "✓ Answer key technical interview questions regarding Email Vocabulary"
-      ],
-      "weight": 2,
-      "interviewFrequency": "★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "HBR Guide to Better Business Writing",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Email Vocabulary Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Email Vocabulary in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Email Vocabulary?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Email Vocabulary to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Email Vocabulary?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_009",
-      "domain": "communication",
-      "module": "Module 1",
-      "submodule": "Professional Speaking",
-      "title": "Self Introduction (30 sec)",
+      "submodule": "Speaking",
+      "title": "Speaking Foundations & Fillers Reduction",
       "learningType": "🎤 Present",
       "priority": "🟠 High",
-      "difficulty": "Easy",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Self Introduction (30 sec).",
-      "prerequisites": [
-        "Module 0 Basics"
-      ],
-      "outcomes": [
-        "✓ Implement Self Introduction (30 sec) correctly in production environments",
-        "✓ Answer key technical interview questions regarding Self Introduction (30 sec)"
-      ],
+      "difficulty": "🟢 Easy",
       "weight": 3,
+      "status": "Not Started",
+      "mastery": "⚪ Beginner",
+      "resource": "Talk Like TED",
+      "practice": "Record 2 min speech without filler words",
+      "notes": "Focus on pausing instead of using 'um', 'ah', 'like'.",
+      "completedOn": "",
+      "favorite": false,
+      "bookmarked": false,
+      "reviseLater": false,
       "interviewFrequency": "★★★★",
       "learningStages": {
         "learn": false,
@@ -7130,43 +6626,29 @@ const DEFAULT_DATA = {
       },
       "resources": {
         "book": "Talk Like TED",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
+        "course": "Speaking Mastery Class",
+        "youtube": "Reducing filler words tutorial",
+        "docs": "Speech patterns guide"
       },
       "miniProjects": {
-        "name": "Self Introduction (30 sec) Prototype App",
+        "name": "Filler Word Count Audit",
         "status": "Not Started"
       },
       "industryExamples": [
         {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
+          "company": "Toastmasters",
+          "application": "Filler word tracking templates"
         }
       ],
       "interviewQuestions": [
         {
-          "question": "Explain the fundamental concept of Self Introduction (30 sec) in a business context.",
+          "question": "How do you control speech pacing under high pressure?",
           "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Self Introduction (30 sec)?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Self Introduction (30 sec) to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
           "answered": false
         }
       ],
       "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Self Introduction (30 sec)?",
+        "question": "What is your main filler word and when do you use it?",
         "answer": ""
       },
       "revision": {
@@ -7174,818 +6656,27 @@ const DEFAULT_DATA = {
         "lastDate": "",
         "nextDate": "",
         "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
+      }
     },
     {
-      "id": "comm_010",
-      "domain": "communication",
+      "id": "t_pc_1",
+      "domain": "prof_comm",
       "module": "Module 1",
-      "submodule": "Professional Speaking",
-      "title": "Self Introduction (60 sec)",
-      "learningType": "🎤 Present",
-      "priority": "🟠 High",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Self Introduction (60 sec).",
-      "prerequisites": [
-        "Module 0 Basics"
-      ],
-      "outcomes": [
-        "✓ Implement Self Introduction (60 sec) correctly in production environments",
-        "✓ Answer key technical interview questions regarding Self Introduction (60 sec)"
-      ],
-      "weight": 3,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Talk Like TED",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Self Introduction (60 sec) Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Self Introduction (60 sec) in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Self Introduction (60 sec)?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Self Introduction (60 sec) to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Self Introduction (60 sec)?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_011",
-      "domain": "communication",
-      "module": "Module 1",
-      "submodule": "Professional Speaking",
-      "title": "Self Introduction (2 min)",
-      "learningType": "🎤 Present",
-      "priority": "🟠 High",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Self Introduction (2 min).",
-      "prerequisites": [
-        "Module 0 Basics"
-      ],
-      "outcomes": [
-        "✓ Implement Self Introduction (2 min) correctly in production environments",
-        "✓ Answer key technical interview questions regarding Self Introduction (2 min)"
-      ],
-      "weight": 3,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Talk Like TED",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Self Introduction (2 min) Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Self Introduction (2 min) in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Self Introduction (2 min)?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Self Introduction (2 min) to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Self Introduction (2 min)?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_012",
-      "domain": "communication",
-      "module": "Module 1",
-      "submodule": "Professional Speaking",
-      "title": "Explaining Projects",
-      "learningType": "🏗 Build",
-      "priority": "🔥 Critical",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Explaining Projects.",
-      "prerequisites": [
-        "Module 0 Basics"
-      ],
-      "outcomes": [
-        "✓ Implement Explaining Projects correctly in production environments",
-        "✓ Answer key technical interview questions regarding Explaining Projects"
-      ],
-      "weight": 5,
-      "interviewFrequency": "★★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "The Pyramid Principle",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Explaining Projects Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Explaining Projects in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Explaining Projects?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Explaining Projects to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Explaining Projects?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_013",
-      "domain": "communication",
-      "module": "Module 1",
-      "submodule": "Professional Speaking",
-      "title": "Speaking with Confidence",
-      "learningType": "🎤 Present",
-      "priority": "🟠 High",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Speaking with Confidence.",
-      "prerequisites": [
-        "Module 0 Basics"
-      ],
-      "outcomes": [
-        "✓ Implement Speaking with Confidence correctly in production environments",
-        "✓ Answer key technical interview questions regarding Speaking with Confidence"
-      ],
-      "weight": 3,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Talk Like TED",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Speaking with Confidence Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Speaking with Confidence in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Speaking with Confidence?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Speaking with Confidence to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Speaking with Confidence?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_014",
-      "domain": "communication",
-      "module": "Module 1",
-      "submodule": "Professional Speaking",
-      "title": "Reducing Filler Words",
+      "submodule": "Writing",
+      "title": "Business Email & Slack Communication",
       "learningType": "📖 Read",
       "priority": "🟠 High",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Reducing Filler Words.",
-      "prerequisites": [
-        "Module 0 Basics"
-      ],
-      "outcomes": [
-        "✓ Implement Reducing Filler Words correctly in production environments",
-        "✓ Answer key technical interview questions regarding Reducing Filler Words"
-      ],
-      "weight": 3,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Toastmasters",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Reducing Filler Words Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Reducing Filler Words in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Reducing Filler Words?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Reducing Filler Words to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Reducing Filler Words?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_015",
-      "domain": "communication",
-      "module": "Module 1",
-      "submodule": "Professional Speaking",
-      "title": "Technical Explanation",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Technical Explanation.",
-      "prerequisites": [
-        "Module 0 Basics"
-      ],
-      "outcomes": [
-        "✓ Implement Technical Explanation correctly in production environments",
-        "✓ Answer key technical interview questions regarding Technical Explanation"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Google Technical Writing",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Technical Explanation Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Technical Explanation in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Technical Explanation?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Technical Explanation to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Technical Explanation?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_016",
-      "domain": "communication",
-      "module": "Module 1",
-      "submodule": "Professional Speaking",
-      "title": "Speaking to Non-Technical Audience",
-      "learningType": "🎤 Present",
-      "priority": "🔥 Critical",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Speaking to Non-Technical Audience.",
-      "prerequisites": [
-        "Module 0 Basics"
-      ],
-      "outcomes": [
-        "✓ Implement Speaking to Non-Technical Audience correctly in production environments",
-        "✓ Answer key technical interview questions regarding Speaking to Non-Technical Audience"
-      ],
-      "weight": 5,
-      "interviewFrequency": "★★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Storytelling with Data",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Speaking to Non-Technical Audience Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Speaking to Non-Technical Audience in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Speaking to Non-Technical Audience?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Speaking to Non-Technical Audience to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Speaking to Non-Technical Audience?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_017",
-      "domain": "communication",
-      "module": "Module 1",
-      "submodule": "Professional Speaking",
-      "title": "Explaining Machine Learning Simply",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Explaining Machine Learning Simply.",
-      "prerequisites": [
-        "Module 0 Basics"
-      ],
-      "outcomes": [
-        "✓ Implement Explaining Machine Learning Simply correctly in production environments",
-        "✓ Answer key technical interview questions regarding Explaining Machine Learning Simply"
-      ],
-      "weight": 5,
-      "interviewFrequency": "★★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Google Technical Writing",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Explaining Machine Learning Simply Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Explaining Machine Learning Simply in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Explaining Machine Learning Simply?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Explaining Machine Learning Simply to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Explaining Machine Learning Simply?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_018",
-      "domain": "communication",
-      "module": "Module 1",
-      "submodule": "Professional Speaking",
-      "title": "Mock Introductions",
-      "learningType": "🎤 Present",
-      "priority": "🟠 High",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Mock Introductions.",
-      "prerequisites": [
-        "Module 0 Basics"
-      ],
-      "outcomes": [
-        "✓ Implement Mock Introductions correctly in production environments",
-        "✓ Answer key technical interview questions regarding Mock Introductions"
-      ],
-      "weight": 3,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Toastmasters",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Mock Introductions Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Mock Introductions in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Mock Introductions?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Mock Introductions to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Mock Introductions?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_019",
-      "domain": "communication",
-      "module": "Module 1",
-      "submodule": "Professional Speaking",
-      "title": "Weekly Recording Practice",
-      "learningType": "💻 Practice",
-      "priority": "🟠 High",
-      "difficulty": "Easy",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Weekly Recording Practice.",
-      "prerequisites": [
-        "Module 0 Basics"
-      ],
-      "outcomes": [
-        "✓ Implement Weekly Recording Practice correctly in production environments",
-        "✓ Answer key technical interview questions regarding Weekly Recording Practice"
-      ],
+      "difficulty": "🟢 Easy",
       "weight": 2,
-      "interviewFrequency": "★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Toastmasters",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Weekly Recording Practice Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Weekly Recording Practice in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Weekly Recording Practice?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Weekly Recording Practice to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Weekly Recording Practice?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_020",
-      "domain": "communication",
-      "module": "Module 2",
-      "submodule": "Business Communication",
-      "title": "Professional Emails",
-      "learningType": "📖 Read",
-      "priority": "🟠 High",
-      "difficulty": "Easy",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Professional Emails.",
-      "prerequisites": [
-        "Module 0 Basics"
-      ],
-      "outcomes": [
-        "✓ Implement Professional Emails correctly in production environments",
-        "✓ Answer key technical interview questions regarding Professional Emails"
-      ],
-      "weight": 2,
+      "status": "Not Started",
+      "mastery": "⚪ Beginner",
+      "resource": "HBR Guide to Better Business Writing",
+      "practice": "Draft a project delay notification",
+      "notes": "Use direct, professional, action-oriented lines.",
+      "completedOn": "",
+      "favorite": false,
+      "bookmarked": false,
+      "reviseLater": false,
       "interviewFrequency": "★★★",
       "learningStages": {
         "learn": false,
@@ -7999,43 +6690,29 @@ const DEFAULT_DATA = {
       },
       "resources": {
         "book": "HBR Guide to Better Business Writing",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
+        "course": "Business Writing course",
+        "youtube": "Slack communication etiquettes",
+        "docs": "Writing guides"
       },
       "miniProjects": {
-        "name": "Professional Emails Prototype App",
+        "name": "Email Template Swipe File",
         "status": "Not Started"
       },
       "industryExamples": [
         {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
+          "company": "Stripe",
+          "application": "Internal communication writing standards"
         }
       ],
       "interviewQuestions": [
         {
-          "question": "Explain the fundamental concept of Professional Emails in a business context.",
+          "question": "How would you write a status update for a delayed project?",
           "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Professional Emails?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Professional Emails to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
           "answered": false
         }
       ],
       "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Professional Emails?",
+        "question": "What is the key difference between email and Slack updates?",
         "answer": ""
       },
       "revision": {
@@ -8043,4741 +6720,27 @@ const DEFAULT_DATA = {
         "lastDate": "",
         "nextDate": "",
         "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
+      }
     },
     {
-      "id": "comm_021",
-      "domain": "communication",
+      "id": "t_pc_2",
+      "domain": "prof_comm",
       "module": "Module 2",
-      "submodule": "Business Communication",
-      "title": "Meeting Etiquette",
-      "learningType": "📖 Read",
-      "priority": "🟠 High",
-      "difficulty": "Easy",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Meeting Etiquette.",
-      "prerequisites": [
-        "Module 0 Basics"
-      ],
-      "outcomes": [
-        "✓ Implement Meeting Etiquette correctly in production environments",
-        "✓ Answer key technical interview questions regarding Meeting Etiquette"
-      ],
-      "weight": 2,
-      "interviewFrequency": "★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Harvard Business Review",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Meeting Etiquette Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Meeting Etiquette in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Meeting Etiquette?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Meeting Etiquette to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Meeting Etiquette?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_022",
-      "domain": "communication",
-      "module": "Module 2",
-      "submodule": "Business Communication",
-      "title": "Slack / Teams Communication",
-      "learningType": "📖 Read",
-      "priority": "🟠 High",
-      "difficulty": "Easy",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Slack / Teams Communication.",
-      "prerequisites": [
-        "Module 0 Basics"
-      ],
-      "outcomes": [
-        "✓ Implement Slack / Teams Communication correctly in production environments",
-        "✓ Answer key technical interview questions regarding Slack / Teams Communication"
-      ],
-      "weight": 2,
-      "interviewFrequency": "★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Harvard Business Review",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Slack / Teams Communication Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Slack / Teams Communication in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Slack / Teams Communication?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Slack / Teams Communication to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Slack / Teams Communication?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_023",
-      "domain": "communication",
-      "module": "Module 2",
-      "submodule": "Business Communication",
-      "title": "Writing Updates",
-      "learningType": "📖 Read",
-      "priority": "🟠 High",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Writing Updates.",
-      "prerequisites": [
-        "Module 0 Basics"
-      ],
-      "outcomes": [
-        "✓ Implement Writing Updates correctly in production environments",
-        "✓ Answer key technical interview questions regarding Writing Updates"
-      ],
-      "weight": 3,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "HBR Guide to Better Business Writing",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Writing Updates Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Writing Updates in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Writing Updates?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Writing Updates to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Writing Updates?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_024",
-      "domain": "communication",
-      "module": "Module 2",
-      "submodule": "Business Communication",
-      "title": "Status Reports",
-      "learningType": "📖 Read",
-      "priority": "🟠 High",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Status Reports.",
-      "prerequisites": [
-        "Module 0 Basics"
-      ],
-      "outcomes": [
-        "✓ Implement Status Reports correctly in production environments",
-        "✓ Answer key technical interview questions regarding Status Reports"
-      ],
-      "weight": 3,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "HBR Guide to Better Business Writing",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Status Reports Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Status Reports in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Status Reports?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Status Reports to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Status Reports?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_025",
-      "domain": "communication",
-      "module": "Module 2",
-      "submodule": "Business Communication",
-      "title": "Escalating Issues",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Escalating Issues.",
-      "prerequisites": [
-        "Module 0 Basics"
-      ],
-      "outcomes": [
-        "✓ Implement Escalating Issues correctly in production environments",
-        "✓ Answer key technical interview questions regarding Escalating Issues"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Harvard Business Review",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Escalating Issues Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Escalating Issues in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Escalating Issues?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Escalating Issues to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Escalating Issues?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_026",
-      "domain": "communication",
-      "module": "Module 2",
-      "submodule": "Business Communication",
-      "title": "Asking Good Questions",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Easy",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Asking Good Questions.",
-      "prerequisites": [
-        "Module 0 Basics"
-      ],
-      "outcomes": [
-        "✓ Implement Asking Good Questions correctly in production environments",
-        "✓ Answer key technical interview questions regarding Asking Good Questions"
-      ],
-      "weight": 3,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "The Pyramid Principle",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Asking Good Questions Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Asking Good Questions in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Asking Good Questions?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Asking Good Questions to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Asking Good Questions?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_027",
-      "domain": "communication",
-      "module": "Module 2",
-      "submodule": "Business Communication",
-      "title": "Giving Constructive Feedback",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Giving Constructive Feedback.",
-      "prerequisites": [
-        "Module 0 Basics"
-      ],
-      "outcomes": [
-        "✓ Implement Giving Constructive Feedback correctly in production environments",
-        "✓ Answer key technical interview questions regarding Giving Constructive Feedback"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Harvard Business Review",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Giving Constructive Feedback Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Giving Constructive Feedback in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Giving Constructive Feedback?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Giving Constructive Feedback to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Giving Constructive Feedback?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_028",
-      "domain": "communication",
-      "module": "Module 2",
-      "submodule": "Business Communication",
-      "title": "Professional Chat Communication",
-      "learningType": "📖 Read",
-      "priority": "🟠 High",
-      "difficulty": "Easy",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Professional Chat Communication.",
-      "prerequisites": [
-        "Module 0 Basics"
-      ],
-      "outcomes": [
-        "✓ Implement Professional Chat Communication correctly in production environments",
-        "✓ Answer key technical interview questions regarding Professional Chat Communication"
-      ],
-      "weight": 2,
-      "interviewFrequency": "★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Harvard Business Review",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Professional Chat Communication Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Professional Chat Communication in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Professional Chat Communication?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Professional Chat Communication to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Professional Chat Communication?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_029",
-      "domain": "communication",
-      "module": "Module 2",
-      "submodule": "Business Communication",
-      "title": "Business Writing",
-      "learningType": "📖 Read",
-      "priority": "🟠 High",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Business Writing.",
-      "prerequisites": [
-        "Module 0 Basics"
-      ],
-      "outcomes": [
-        "✓ Implement Business Writing correctly in production environments",
-        "✓ Answer key technical interview questions regarding Business Writing"
-      ],
-      "weight": 3,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "HBR Guide to Better Business Writing",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Business Writing Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Business Writing in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Business Writing?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Business Writing to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Business Writing?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_030",
-      "domain": "communication",
-      "module": "Module 3",
-      "submodule": "Storytelling with Data",
-      "title": "Choosing Charts",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Choosing Charts.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Choosing Charts correctly in production environments",
-        "✓ Answer key technical interview questions regarding Choosing Charts"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Storytelling with Data",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Choosing Charts Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Choosing Charts in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Choosing Charts?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Choosing Charts to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Choosing Charts?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_031",
-      "domain": "communication",
-      "module": "Module 3",
-      "submodule": "Storytelling with Data",
-      "title": "Highlighting Insights",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Highlighting Insights.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Highlighting Insights correctly in production environments",
-        "✓ Answer key technical interview questions regarding Highlighting Insights"
-      ],
-      "weight": 5,
-      "interviewFrequency": "★★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Storytelling with Data",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Highlighting Insights Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Highlighting Insights in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Highlighting Insights?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Highlighting Insights to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Highlighting Insights?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_032",
-      "domain": "communication",
-      "module": "Module 3",
-      "submodule": "Storytelling with Data",
-      "title": "Executive Summary",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Executive Summary.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Executive Summary correctly in production environments",
-        "✓ Answer key technical interview questions regarding Executive Summary"
-      ],
-      "weight": 5,
-      "interviewFrequency": "★★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "The Pyramid Principle",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Executive Summary Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Executive Summary in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Executive Summary?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Executive Summary to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Executive Summary?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_033",
-      "domain": "communication",
-      "module": "Module 3",
-      "submodule": "Storytelling with Data",
-      "title": "Actionable Recommendations",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Actionable Recommendations.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Actionable Recommendations correctly in production environments",
-        "✓ Answer key technical interview questions regarding Actionable Recommendations"
-      ],
-      "weight": 5,
-      "interviewFrequency": "★★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "The Pyramid Principle",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Actionable Recommendations Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Actionable Recommendations in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Actionable Recommendations?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Actionable Recommendations to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Actionable Recommendations?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_034",
-      "domain": "communication",
-      "module": "Module 3",
-      "submodule": "Storytelling with Data",
-      "title": "Avoiding Misleading Visuals",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Easy",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Avoiding Misleading Visuals.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Avoiding Misleading Visuals correctly in production environments",
-        "✓ Answer key technical interview questions regarding Avoiding Misleading Visuals"
-      ],
-      "weight": 3,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Storytelling with Data",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Avoiding Misleading Visuals Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Avoiding Misleading Visuals in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Avoiding Misleading Visuals?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Avoiding Misleading Visuals to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Avoiding Misleading Visuals?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_035",
-      "domain": "communication",
-      "module": "Module 3",
-      "submodule": "Storytelling with Data",
-      "title": "Business KPIs",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Business KPIs.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Business KPIs correctly in production environments",
-        "✓ Answer key technical interview questions regarding Business KPIs"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Harvard Business Review",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Business KPIs Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Business KPIs in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Business KPIs?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Business KPIs to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Business KPIs?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_036",
-      "domain": "communication",
-      "module": "Module 3",
-      "submodule": "Storytelling with Data",
-      "title": "Communicating Results",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Communicating Results.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Communicating Results correctly in production environments",
-        "✓ Answer key technical interview questions regarding Communicating Results"
-      ],
-      "weight": 5,
-      "interviewFrequency": "★★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Storytelling with Data",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Communicating Results Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Communicating Results in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Communicating Results?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Communicating Results to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Communicating Results?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_037",
-      "domain": "communication",
-      "module": "Module 3",
-      "submodule": "Storytelling with Data",
-      "title": "Data Narrative",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Data Narrative.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Data Narrative correctly in production environments",
-        "✓ Answer key technical interview questions regarding Data Narrative"
-      ],
-      "weight": 5,
-      "interviewFrequency": "★★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Storytelling with Data",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Data Narrative Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Data Narrative in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Data Narrative?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Data Narrative to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Data Narrative?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_038",
-      "domain": "communication",
-      "module": "Module 3",
-      "submodule": "Storytelling with Data",
-      "title": "Audience-Specific Communication",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Audience-Specific Communication.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Audience-Specific Communication correctly in production environments",
-        "✓ Answer key technical interview questions regarding Audience-Specific Communication"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Storytelling with Data",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Audience-Specific Communication Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Audience-Specific Communication in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Audience-Specific Communication?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Audience-Specific Communication to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Audience-Specific Communication?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_039",
-      "domain": "communication",
-      "module": "Module 3",
-      "submodule": "Storytelling with Data",
-      "title": "Explain dashboard for CEO",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Explain dashboard for CEO.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Explain dashboard for CEO correctly in production environments",
-        "✓ Answer key technical interview questions regarding Explain dashboard for CEO"
-      ],
-      "weight": 5,
-      "interviewFrequency": "★★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Storytelling with Data",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Explain dashboard for CEO Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Explain dashboard for CEO in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Explain dashboard for CEO?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Explain dashboard for CEO to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Explain dashboard for CEO?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_040",
-      "domain": "communication",
-      "module": "Module 3",
-      "submodule": "Storytelling with Data",
-      "title": "Explain dashboard for Marketing Manager",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Explain dashboard for Marketing Manager.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Explain dashboard for Marketing Manager correctly in production environments",
-        "✓ Answer key technical interview questions regarding Explain dashboard for Marketing Manager"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Storytelling with Data",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Explain dashboard for Marketing Manager Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Explain dashboard for Marketing Manager in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Explain dashboard for Marketing Manager?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Explain dashboard for Marketing Manager to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Explain dashboard for Marketing Manager?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_041",
-      "domain": "communication",
-      "module": "Module 3",
-      "submodule": "Storytelling with Data",
-      "title": "Explain dashboard for Product Manager",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Explain dashboard for Product Manager.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Explain dashboard for Product Manager correctly in production environments",
-        "✓ Answer key technical interview questions regarding Explain dashboard for Product Manager"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Storytelling with Data",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Explain dashboard for Product Manager Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Explain dashboard for Product Manager in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Explain dashboard for Product Manager?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Explain dashboard for Product Manager to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Explain dashboard for Product Manager?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_042",
-      "domain": "communication",
-      "module": "Module 3",
-      "submodule": "Storytelling with Data",
-      "title": "Explain dashboard for Data Scientist",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Explain dashboard for Data Scientist.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Explain dashboard for Data Scientist correctly in production environments",
-        "✓ Answer key technical interview questions regarding Explain dashboard for Data Scientist"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Storytelling with Data",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Explain dashboard for Data Scientist Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Explain dashboard for Data Scientist in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Explain dashboard for Data Scientist?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Explain dashboard for Data Scientist to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Explain dashboard for Data Scientist?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_043",
-      "domain": "communication",
-      "module": "Module 4",
-      "submodule": "Technical Writing",
-      "title": "README Files",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over README Files.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement README Files correctly in production environments",
-        "✓ Answer key technical interview questions regarding README Files"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Docs for Developers",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "README Files Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of README Files in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using README Files?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied README Files to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying README Files?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_044",
-      "domain": "communication",
-      "module": "Module 4",
-      "submodule": "Technical Writing",
-      "title": "Project Documentation",
-      "learningType": "🏗 Build",
-      "priority": "🔥 Critical",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Project Documentation.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Project Documentation correctly in production environments",
-        "✓ Answer key technical interview questions regarding Project Documentation"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Docs for Developers",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Project Documentation Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Project Documentation in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Project Documentation?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Project Documentation to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Project Documentation?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_045",
-      "domain": "communication",
-      "module": "Module 4",
-      "submodule": "Technical Writing",
-      "title": "Notebook Narratives",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Notebook Narratives.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Notebook Narratives correctly in production environments",
-        "✓ Answer key technical interview questions regarding Notebook Narratives"
-      ],
-      "weight": 3,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Google Technical Writing",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Notebook Narratives Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Notebook Narratives in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Notebook Narratives?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Notebook Narratives to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Notebook Narratives?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_046",
-      "domain": "communication",
-      "module": "Module 4",
-      "submodule": "Technical Writing",
-      "title": "API Documentation Basics",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over API Documentation Basics.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement API Documentation Basics correctly in production environments",
-        "✓ Answer key technical interview questions regarding API Documentation Basics"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Docs for Developers",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "API Documentation Basics Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of API Documentation Basics in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using API Documentation Basics?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied API Documentation Basics to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying API Documentation Basics?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_047",
-      "domain": "communication",
-      "module": "Module 4",
-      "submodule": "Technical Writing",
-      "title": "Code Comments",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Easy",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Code Comments.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Code Comments correctly in production environments",
-        "✓ Answer key technical interview questions regarding Code Comments"
-      ],
-      "weight": 3,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Google Technical Writing",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Code Comments Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Code Comments in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Code Comments?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Code Comments to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Code Comments?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_048",
-      "domain": "communication",
-      "module": "Module 4",
-      "submodule": "Technical Writing",
-      "title": "Markdown",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Easy",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Markdown.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Markdown correctly in production environments",
-        "✓ Answer key technical interview questions regarding Markdown"
-      ],
-      "weight": 2,
-      "interviewFrequency": "★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "GitHub Docs",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Markdown Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Markdown in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Markdown?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Markdown to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Markdown?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_049",
-      "domain": "communication",
-      "module": "Module 4",
-      "submodule": "Technical Writing",
-      "title": "Documentation Structure",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Documentation Structure.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Documentation Structure correctly in production environments",
-        "✓ Answer key technical interview questions regarding Documentation Structure"
-      ],
-      "weight": 3,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Docs for Developers",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Documentation Structure Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Documentation Structure in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Documentation Structure?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Documentation Structure to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Documentation Structure?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_050",
-      "domain": "communication",
-      "module": "Module 4",
-      "submodule": "Technical Writing",
-      "title": "Writing Reports",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Writing Reports.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Writing Reports correctly in production environments",
-        "✓ Answer key technical interview questions regarding Writing Reports"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Docs for Developers",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Writing Reports Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Writing Reports in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Writing Reports?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Writing Reports to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Writing Reports?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_051",
-      "domain": "communication",
-      "module": "Module 4",
-      "submodule": "Technical Writing",
-      "title": "Writing Research Summaries",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Writing Research Summaries.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Writing Research Summaries correctly in production environments",
-        "✓ Answer key technical interview questions regarding Writing Research Summaries"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Google Technical Writing",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Writing Research Summaries Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Writing Research Summaries in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Writing Research Summaries?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Writing Research Summaries to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Writing Research Summaries?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_052",
-      "domain": "communication",
-      "module": "Module 4",
-      "submodule": "Technical Writing",
-      "title": "Project: Rewrite existing project docs",
-      "learningType": "🏗 Build",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Project: Rewrite existing project docs.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Project: Rewrite existing project docs correctly in production environments",
-        "✓ Answer key technical interview questions regarding Project: Rewrite existing project docs"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Docs for Developers",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Project: Rewrite existing project docs Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Project: Rewrite existing project docs in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Project: Rewrite existing project docs?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Project: Rewrite existing project docs to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Project: Rewrite existing project docs?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_053",
-      "domain": "communication",
-      "module": "Module 5",
-      "submodule": "Interview Communication Lab",
-      "title": "Tell Me About Yourself",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Tell Me About Yourself.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Tell Me About Yourself correctly in production environments",
-        "✓ Answer key technical interview questions regarding Tell Me About Yourself"
-      ],
-      "weight": 5,
-      "interviewFrequency": "★★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Talk Like TED",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Tell Me About Yourself Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Tell Me About Yourself in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Tell Me About Yourself?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Tell Me About Yourself to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Tell Me About Yourself?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_054",
-      "domain": "communication",
-      "module": "Module 5",
-      "submodule": "Interview Communication Lab",
-      "title": "Strengths",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Easy",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Strengths.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Strengths correctly in production environments",
-        "✓ Answer key technical interview questions regarding Strengths"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Talk Like TED",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Strengths Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Strengths in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Strengths?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Strengths to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Strengths?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_055",
-      "domain": "communication",
-      "module": "Module 5",
-      "submodule": "Interview Communication Lab",
-      "title": "Weaknesses",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Weaknesses.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Weaknesses correctly in production environments",
-        "✓ Answer key technical interview questions regarding Weaknesses"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Talk Like TED",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Weaknesses Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Weaknesses in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Weaknesses?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Weaknesses to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Weaknesses?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_056",
-      "domain": "communication",
-      "module": "Module 5",
-      "submodule": "Interview Communication Lab",
-      "title": "Behavioral Questions",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Behavioral Questions.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Behavioral Questions correctly in production environments",
-        "✓ Answer key technical interview questions regarding Behavioral Questions"
-      ],
-      "weight": 5,
-      "interviewFrequency": "★★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Talk Like TED",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Behavioral Questions Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Behavioral Questions in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Behavioral Questions?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Behavioral Questions to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Behavioral Questions?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_057",
-      "domain": "communication",
-      "module": "Module 5",
-      "submodule": "Interview Communication Lab",
-      "title": "STAR Method",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over STAR Method.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement STAR Method correctly in production environments",
-        "✓ Answer key technical interview questions regarding STAR Method"
-      ],
-      "weight": 5,
-      "interviewFrequency": "★★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Talk Like TED",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Mock Interview Pitch Builder",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of STAR Method in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using STAR Method?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied STAR Method to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "How do you keep a STAR method response under 2 minutes without omitting results?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_058",
-      "domain": "communication",
-      "module": "Module 5",
-      "submodule": "Interview Communication Lab",
-      "title": "Project Explanation",
-      "learningType": "🏗 Build",
-      "priority": "🔥 Critical",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Project Explanation.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Project Explanation correctly in production environments",
-        "✓ Answer key technical interview questions regarding Project Explanation"
-      ],
-      "weight": 5,
-      "interviewFrequency": "★★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "The Pyramid Principle",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Project Explanation Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Project Explanation in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Project Explanation?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Project Explanation to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Project Explanation?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_059",
-      "domain": "communication",
-      "module": "Module 5",
-      "submodule": "Interview Communication Lab",
-      "title": "SQL Project Explanation",
-      "learningType": "🏗 Build",
-      "priority": "🔥 Critical",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over SQL Project Explanation.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement SQL Project Explanation correctly in production environments",
-        "✓ Answer key technical interview questions regarding SQL Project Explanation"
-      ],
-      "weight": 5,
-      "interviewFrequency": "★★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "The Pyramid Principle",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "SQL Project Explanation Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of SQL Project Explanation in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using SQL Project Explanation?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied SQL Project Explanation to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying SQL Project Explanation?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_060",
-      "domain": "communication",
-      "module": "Module 5",
-      "submodule": "Interview Communication Lab",
-      "title": "Python Project Explanation",
-      "learningType": "🏗 Build",
-      "priority": "🔥 Critical",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Python Project Explanation.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Python Project Explanation correctly in production environments",
-        "✓ Answer key technical interview questions regarding Python Project Explanation"
-      ],
-      "weight": 5,
-      "interviewFrequency": "★★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "The Pyramid Principle",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Python Project Explanation Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Python Project Explanation in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Python Project Explanation?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Python Project Explanation to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Python Project Explanation?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_061",
-      "domain": "communication",
-      "module": "Module 5",
-      "submodule": "Interview Communication Lab",
-      "title": "Machine Learning Explanation",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Machine Learning Explanation.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Machine Learning Explanation correctly in production environments",
-        "✓ Answer key technical interview questions regarding Machine Learning Explanation"
-      ],
-      "weight": 5,
-      "interviewFrequency": "★★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "The Pyramid Principle",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Machine Learning Explanation Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Machine Learning Explanation in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Machine Learning Explanation?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Machine Learning Explanation to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Machine Learning Explanation?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_062",
-      "domain": "communication",
-      "module": "Module 5",
-      "submodule": "Interview Communication Lab",
-      "title": "Failure Stories",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Failure Stories.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Failure Stories correctly in production environments",
-        "✓ Answer key technical interview questions regarding Failure Stories"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Talk Like TED",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Failure Stories Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Failure Stories in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Failure Stories?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Failure Stories to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Failure Stories?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_063",
-      "domain": "communication",
-      "module": "Module 5",
-      "submodule": "Interview Communication Lab",
-      "title": "Leadership Questions",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Leadership Questions.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Leadership Questions correctly in production environments",
-        "✓ Answer key technical interview questions regarding Leadership Questions"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Talk Like TED",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Leadership Questions Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Leadership Questions in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Leadership Questions?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Leadership Questions to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Leadership Questions?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_064",
-      "domain": "communication",
-      "module": "Module 5",
-      "submodule": "Interview Communication Lab",
-      "title": "Conflict Resolution",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Conflict Resolution.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Conflict Resolution correctly in production environments",
-        "✓ Answer key technical interview questions regarding Conflict Resolution"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Talk Like TED",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Conflict Resolution Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Conflict Resolution in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Conflict Resolution?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Conflict Resolution to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Conflict Resolution?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_065",
-      "domain": "communication",
-      "module": "Module 5",
-      "submodule": "Interview Communication Lab",
-      "title": "HR Round Practice",
-      "learningType": "💻 Practice",
-      "priority": "🔥 Critical",
-      "difficulty": "Easy",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over HR Round Practice.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement HR Round Practice correctly in production environments",
-        "✓ Answer key technical interview questions regarding HR Round Practice"
-      ],
-      "weight": 3,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Talk Like TED",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "HR Round Practice Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of HR Round Practice in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using HR Round Practice?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied HR Round Practice to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying HR Round Practice?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_066",
-      "domain": "communication",
-      "module": "Module 5",
-      "submodule": "Interview Communication Lab",
-      "title": "Technical Interview Communication",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Technical Interview Communication.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Technical Interview Communication correctly in production environments",
-        "✓ Answer key technical interview questions regarding Technical Interview Communication"
-      ],
-      "weight": 5,
-      "interviewFrequency": "★★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "The Pyramid Principle",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Technical Interview Communication Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Technical Interview Communication in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Technical Interview Communication?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Technical Interview Communication to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Technical Interview Communication?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_067",
-      "domain": "communication",
-      "module": "Module 5",
-      "submodule": "Interview Communication Lab",
-      "title": "Confidence Building",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Easy",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Confidence Building.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Confidence Building correctly in production environments",
-        "✓ Answer key technical interview questions regarding Confidence Building"
-      ],
-      "weight": 3,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Talk Like TED",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Confidence Building Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Confidence Building in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Confidence Building?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Confidence Building to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Confidence Building?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_068",
-      "domain": "communication",
-      "module": "Module 6",
-      "submodule": "Data Storytelling",
-      "title": "Communicating Insights",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Communicating Insights.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Communicating Insights correctly in production environments",
-        "✓ Answer key technical interview questions regarding Communicating Insights"
-      ],
-      "weight": 5,
-      "interviewFrequency": "★★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Storytelling with Data",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Communicating Insights Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Communicating Insights in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Communicating Insights?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Communicating Insights to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Communicating Insights?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_069",
-      "domain": "communication",
-      "module": "Module 6",
-      "submodule": "Data Storytelling",
-      "title": "Executive Presentations",
-      "learningType": "🏗 Build",
-      "priority": "🔥 Critical",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Executive Presentations.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Executive Presentations correctly in production environments",
-        "✓ Answer key technical interview questions regarding Executive Presentations"
-      ],
-      "weight": 5,
-      "interviewFrequency": "★★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "The Pyramid Principle",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Executive Presentations Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Executive Presentations in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Executive Presentations?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Executive Presentations to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Executive Presentations?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_070",
-      "domain": "communication",
-      "module": "Module 6",
-      "submodule": "Data Storytelling",
-      "title": "Recommendation Writing",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Recommendation Writing.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Recommendation Writing correctly in production environments",
-        "✓ Answer key technical interview questions regarding Recommendation Writing"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "The Pyramid Principle",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Recommendation Writing Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Recommendation Writing in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Recommendation Writing?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Recommendation Writing to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Recommendation Writing?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_071",
-      "domain": "communication",
-      "module": "Module 6",
-      "submodule": "Data Storytelling",
-      "title": "Business Thinking",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Business Thinking.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Business Thinking correctly in production environments",
-        "✓ Answer key technical interview questions regarding Business Thinking"
-      ],
-      "weight": 5,
-      "interviewFrequency": "★★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "The Pyramid Principle",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Business Thinking Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Business Thinking in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Business Thinking?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Business Thinking to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Business Thinking?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_072",
-      "domain": "communication",
-      "module": "Module 6",
-      "submodule": "Data Storytelling",
-      "title": "Root Cause Analysis",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Root Cause Analysis.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Root Cause Analysis correctly in production environments",
-        "✓ Answer key technical interview questions regarding Root Cause Analysis"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "The Pyramid Principle",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Root Cause Analysis Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Root Cause Analysis in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Root Cause Analysis?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Root Cause Analysis to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Root Cause Analysis?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_073",
-      "domain": "communication",
-      "module": "Module 6",
-      "submodule": "Data Storytelling",
-      "title": "Decision Making",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Decision Making.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Decision Making correctly in production environments",
-        "✓ Answer key technical interview questions regarding Decision Making"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "The Pyramid Principle",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Decision Making Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Decision Making in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Decision Making?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Decision Making to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Decision Making?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_074",
-      "domain": "communication",
-      "module": "Module 6",
-      "submodule": "Data Storytelling",
-      "title": "Presenting KPIs",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Easy",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Presenting KPIs.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Presenting KPIs correctly in production environments",
-        "✓ Answer key technical interview questions regarding Presenting KPIs"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Storytelling with Data",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Presenting KPIs Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Presenting KPIs in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Presenting KPIs?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Presenting KPIs to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Presenting KPIs?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_075",
-      "domain": "communication",
-      "module": "Module 6",
-      "submodule": "Data Storytelling",
-      "title": "Communicating Model Results",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Communicating Model Results.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Communicating Model Results correctly in production environments",
-        "✓ Answer key technical interview questions regarding Communicating Model Results"
-      ],
-      "weight": 5,
-      "interviewFrequency": "★★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Storytelling with Data",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Communicating Model Results Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Communicating Model Results in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Communicating Model Results?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Communicating Model Results to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Communicating Model Results?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_076",
-      "domain": "communication",
-      "module": "Module 6",
-      "submodule": "Data Storytelling",
-      "title": "Presenting Uncertainty",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Presenting Uncertainty.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Presenting Uncertainty correctly in production environments",
-        "✓ Answer key technical interview questions regarding Presenting Uncertainty"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Storytelling with Data",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Presenting Uncertainty Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Presenting Uncertainty in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Presenting Uncertainty?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Presenting Uncertainty to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Presenting Uncertainty?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_077",
-      "domain": "communication",
-      "module": "Module 6",
-      "submodule": "Data Storytelling",
-      "title": "Business Recommendations",
-      "learningType": "📖 Read",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Business Recommendations.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Business Recommendations correctly in production environments",
-        "✓ Answer key technical interview questions regarding Business Recommendations"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "The Pyramid Principle",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Business Recommendations Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Business Recommendations in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Business Recommendations?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Business Recommendations to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Business Recommendations?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_078",
-      "domain": "communication",
-      "module": "Module 6",
-      "submodule": "Data Storytelling",
-      "title": "Mini Projects: Present analysis as Executive Summary",
-      "learningType": "🏗 Build",
-      "priority": "🔥 Critical",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Mini Projects: Present analysis as Executive Summary.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Mini Projects: Present analysis as Executive Summary correctly in production environments",
-        "✓ Answer key technical interview questions regarding Mini Projects: Present analysis as Executive Summary"
-      ],
-      "weight": 5,
-      "interviewFrequency": "★★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "The Pyramid Principle",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Mini Projects: Present analysis as Executive Summary Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Mini Projects: Present analysis as Executive Summary in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Mini Projects: Present analysis as Executive Summary?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Mini Projects: Present analysis as Executive Summary to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Mini Projects: Present analysis as Executive Summary?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_079",
-      "domain": "communication",
-      "module": "Module 6",
-      "submodule": "Data Storytelling",
-      "title": "Mini Projects: Present analysis as Business Report",
-      "learningType": "🏗 Build",
-      "priority": "🔥 Critical",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Mini Projects: Present analysis as Business Report.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Mini Projects: Present analysis as Business Report correctly in production environments",
-        "✓ Answer key technical interview questions regarding Mini Projects: Present analysis as Business Report"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "The Pyramid Principle",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Mini Projects: Present analysis as Business Report Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Mini Projects: Present analysis as Business Report in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Mini Projects: Present analysis as Business Report?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Mini Projects: Present analysis as Business Report to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Mini Projects: Present analysis as Business Report?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_080",
-      "domain": "communication",
-      "module": "Module 6",
-      "submodule": "Data Storytelling",
-      "title": "Mini Projects: Present analysis as Presentation",
-      "learningType": "🏗 Build",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Mini Projects: Present analysis as Presentation.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Mini Projects: Present analysis as Presentation correctly in production environments",
-        "✓ Answer key technical interview questions regarding Mini Projects: Present analysis as Presentation"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Talk Like TED",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Mini Projects: Present analysis as Presentation Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Mini Projects: Present analysis as Presentation in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Mini Projects: Present analysis as Presentation?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Mini Projects: Present analysis as Presentation to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Mini Projects: Present analysis as Presentation?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_081",
-      "domain": "communication",
-      "module": "Module 6",
-      "submodule": "Data Storytelling",
-      "title": "Mini Projects: Present analysis as One-minute explanation",
-      "learningType": "🏗 Build",
-      "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Mini Projects: Present analysis as One-minute explanation.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Mini Projects: Present analysis as One-minute explanation correctly in production environments",
-        "✓ Answer key technical interview questions regarding Mini Projects: Present analysis as One-minute explanation"
-      ],
-      "weight": 5,
-      "interviewFrequency": "★★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Talk Like TED",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Mini Projects: Present analysis as One-minute explanation Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Mini Projects: Present analysis as One-minute explanation in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Mini Projects: Present analysis as One-minute explanation?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Mini Projects: Present analysis as One-minute explanation to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Mini Projects: Present analysis as One-minute explanation?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_082",
-      "domain": "communication",
-      "module": "Module 7",
-      "submodule": "Presentation Skills",
-      "title": "Presentation Structure",
+      "submodule": "Presentations",
+      "title": "Structure and Visual Narrative Flow",
       "learningType": "🏗 Build",
       "priority": "🟠 High",
-      "difficulty": "Easy",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Presentation Structure.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Presentation Structure correctly in production environments",
-        "✓ Answer key technical interview questions regarding Presentation Structure"
-      ],
+      "difficulty": "🟡 Medium",
       "weight": 4,
+      "status": "Not Started",
+      "mastery": "⚪ Beginner",
+      "resource": "Slideology",
+      "practice": "Design a 5-slide project summary deck",
+      "notes": "Structure using the Situation-Complication-Resolution framework.",
+      "completedOn": "",
+      "favorite": false,
+      "bookmarked": false,
+      "reviseLater": false,
       "interviewFrequency": "★★★★",
       "learningStages": {
         "learn": false,
@@ -12790,44 +6753,30 @@ const DEFAULT_DATA = {
         "revision": false
       },
       "resources": {
-        "book": "Talk Like TED",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
+        "book": "Slideology",
+        "course": "Visual Storytelling",
+        "youtube": "Slide structures tutorial",
+        "docs": "Visual narrative standards"
       },
       "miniProjects": {
-        "name": "Presentation Structure Prototype App",
+        "name": "Project Summary Slide Deck",
         "status": "Not Started"
       },
       "industryExamples": [
         {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
+          "company": "McKinsey",
+          "application": "Pyramid Principle presentation structure"
         }
       ],
       "interviewQuestions": [
         {
-          "question": "Explain the fundamental concept of Presentation Structure in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Presentation Structure?",
+          "question": "How do you handle questions you don't know the answer to during a slide presentation?",
           "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Presentation Structure to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
           "answered": false
         }
       ],
       "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Presentation Structure?",
+        "question": "How do you balance details with scannability in slides?",
         "answer": ""
       },
       "revision": {
@@ -12835,27 +6784,92 @@ const DEFAULT_DATA = {
         "lastDate": "",
         "nextDate": "",
         "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
+      }
     },
     {
-      "id": "comm_083",
-      "domain": "communication",
-      "module": "Module 7",
-      "submodule": "Presentation Skills",
-      "title": "Slide Design",
+      "id": "t_pc_3",
+      "domain": "prof_comm",
+      "module": "Module 3",
+      "submodule": "Documentation",
+      "title": "Markdown Documentation and Clean READMEs",
       "learningType": "📖 Read",
       "priority": "🟠 High",
-      "difficulty": "Easy",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Slide Design.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Slide Design correctly in production environments",
-        "✓ Answer key technical interview questions regarding Slide Design"
-      ],
+      "difficulty": "🟢 Easy",
       "weight": 3,
+      "status": "Not Started",
+      "mastery": "⚪ Beginner",
+      "resource": "Writing Great Documentation",
+      "practice": "Write a comprehensive README for a GitHub repository",
+      "notes": "Include setup, API definitions, and examples.",
+      "completedOn": "",
+      "favorite": false,
+      "bookmarked": false,
+      "reviseLater": false,
       "interviewFrequency": "★★★★",
+      "learningStages": {
+        "learn": false,
+        "watch": false,
+        "practice": false,
+        "project": false,
+        "industry": false,
+        "interview": false,
+        "reflection": false,
+        "revision": false
+      },
+      "resources": {
+        "book": "Writing Great Documentation",
+        "course": "Technical Writing Foundations",
+        "youtube": "README best practices video",
+        "docs": "Markdown styling references"
+      },
+      "miniProjects": {
+        "name": "GitHub Repository Documentation Suite",
+        "status": "Not Started"
+      },
+      "industryExamples": [
+        {
+          "company": "Google",
+          "application": "Technical documentation guidelines"
+        }
+      ],
+      "interviewQuestions": [
+        {
+          "question": "Explain why code comments should describe 'why' rather than 'what'.",
+          "difficulty": "🟢 Easy",
+          "answered": false
+        }
+      ],
+      "reflection": {
+        "question": "What sections are critical for an open-source library README?",
+        "answer": ""
+      },
+      "revision": {
+        "interval": 2,
+        "lastDate": "",
+        "nextDate": "",
+        "confidence": "⚪ Beginner"
+      }
+    },
+    {
+      "id": "t_pc_4",
+      "domain": "prof_comm",
+      "module": "Module 4",
+      "submodule": "Data Storytelling",
+      "title": "Translating Metrics to Business Impact",
+      "learningType": "🏗 Build",
+      "priority": "🔥 Critical",
+      "difficulty": "🟡 Medium",
+      "weight": 5,
+      "status": "Not Started",
+      "mastery": "⚪ Beginner",
+      "resource": "Storytelling with Data",
+      "practice": "Create an executive metrics brief",
+      "notes": "Explain accuracy, precision, and recall in dollars.",
+      "completedOn": "",
+      "favorite": false,
+      "bookmarked": false,
+      "reviseLater": false,
+      "interviewFrequency": "★★★★★",
       "learningStages": {
         "learn": false,
         "watch": false,
@@ -12868,43 +6882,29 @@ const DEFAULT_DATA = {
       },
       "resources": {
         "book": "Storytelling with Data",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
+        "course": "Executive Briefing Mastery",
+        "youtube": "Data translation guidelines",
+        "docs": "Business KPI models"
       },
       "miniProjects": {
-        "name": "Slide Design Prototype App",
+        "name": "Executive Business Case Briefing",
         "status": "Not Started"
       },
       "industryExamples": [
         {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
           "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
+          "application": "Cost-benefit metrics models for product decisions"
         }
       ],
       "interviewQuestions": [
         {
-          "question": "Explain the fundamental concept of Slide Design in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Slide Design?",
+          "question": "How would you explain the business trade-off between precision and recall to a VP of Sales?",
           "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Slide Design to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
           "answered": false
         }
       ],
       "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Slide Design?",
+        "question": "Why do business executives focus on metrics translation instead of model formulas?",
         "answer": ""
       },
       "revision": {
@@ -12912,103 +6912,27 @@ const DEFAULT_DATA = {
         "lastDate": "",
         "nextDate": "",
         "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
+      }
     },
     {
-      "id": "comm_084",
-      "domain": "communication",
-      "module": "Module 7",
-      "submodule": "Presentation Skills",
-      "title": "Visual Hierarchy",
-      "learningType": "📖 Read",
-      "priority": "🟠 High",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Visual Hierarchy.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Visual Hierarchy correctly in production environments",
-        "✓ Answer key technical interview questions regarding Visual Hierarchy"
-      ],
-      "weight": 3,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Storytelling with Data",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Visual Hierarchy Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Visual Hierarchy in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Visual Hierarchy?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Visual Hierarchy to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Visual Hierarchy?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_085",
-      "domain": "communication",
-      "module": "Module 7",
-      "submodule": "Presentation Skills",
-      "title": "Speaking with Slides",
+      "id": "t_pc_5",
+      "domain": "prof_comm",
+      "module": "Module 5",
+      "submodule": "Business Communication",
+      "title": "Managing Stakeholder Expectations",
       "learningType": "🎤 Present",
       "priority": "🟠 High",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Speaking with Slides.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Speaking with Slides correctly in production environments",
-        "✓ Answer key technical interview questions regarding Speaking with Slides"
-      ],
+      "difficulty": "🔴 Hard",
       "weight": 4,
+      "status": "Not Started",
+      "mastery": "⚪ Beginner",
+      "resource": "Crucial Conversations",
+      "practice": "Roleplay resolving a metric alignment conflict",
+      "notes": "Handle disagreements constructively with factual evidence.",
+      "completedOn": "",
+      "favorite": false,
+      "bookmarked": false,
+      "reviseLater": false,
       "interviewFrequency": "★★★★",
       "learningStages": {
         "learn": false,
@@ -13021,44 +6945,30 @@ const DEFAULT_DATA = {
         "revision": false
       },
       "resources": {
-        "book": "Talk Like TED",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
+        "book": "Crucial Conversations",
+        "course": "Stakeholder Management Seminar",
+        "youtube": "Managing difficult clients video",
+        "docs": "Alignment templates"
       },
       "miniProjects": {
-        "name": "Speaking with Slides Prototype App",
+        "name": "Stakeholder Strategy Document",
         "status": "Not Started"
       },
       "industryExamples": [
         {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
+          "company": "Amazon",
+          "application": "Six-page narratives for document reviews"
         }
       ],
       "interviewQuestions": [
         {
-          "question": "Explain the fundamental concept of Speaking with Slides in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Speaking with Slides?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Speaking with Slides to solve a complex engineering or analytical challenge.",
+          "question": "Tell me about a time you disagreed with a stakeholder. How did you align?",
           "difficulty": "🔴 Hard",
           "answered": false
         }
       ],
       "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Speaking with Slides?",
+        "question": "What is your primary method to build trust with a cross-functional partner?",
         "answer": ""
       },
       "revision": {
@@ -13066,26 +6976,91 @@ const DEFAULT_DATA = {
         "lastDate": "",
         "nextDate": "",
         "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
+      }
     },
     {
-      "id": "comm_086",
-      "domain": "communication",
-      "module": "Module 7",
-      "submodule": "Presentation Skills",
-      "title": "Handling Questions",
+      "id": "t_ip_0",
+      "domain": "interview_prep",
+      "module": "Module 0",
+      "submodule": "Interview Foundations",
+      "title": "Understanding Interview Channels & Panels",
       "learningType": "📖 Read",
+      "priority": "🟠 High",
+      "difficulty": "🟢 Easy",
+      "weight": 3,
+      "status": "Not Started",
+      "mastery": "⚪ Beginner",
+      "resource": "Cracking the Coding Interview",
+      "practice": "Map out the hiring funnel checklist",
+      "notes": "Understand the roles of Recruiter, HR, Hiring Manager, Technical Interviewers, and Bar Raisers.",
+      "completedOn": "",
+      "favorite": false,
+      "bookmarked": false,
+      "reviseLater": false,
+      "interviewFrequency": "★★★★",
+      "learningStages": {
+        "learn": false,
+        "watch": false,
+        "practice": false,
+        "project": false,
+        "industry": false,
+        "interview": false,
+        "reflection": false,
+        "revision": false
+      },
+      "resources": {
+        "book": "Cracking the Coding Interview",
+        "course": "Interview Systems 101",
+        "youtube": "Hiring managers perspectives",
+        "docs": "Interview structures reference"
+      },
+      "miniProjects": {
+        "name": "Funnel Mapping Document",
+        "status": "Not Started"
+      },
+      "industryExamples": [
+        {
+          "company": "FAANG",
+          "application": "Standardized loops structures and scoring criteria"
+        }
+      ],
+      "interviewQuestions": [
+        {
+          "question": "What is the difference between an online assessment and a live technical screening?",
+          "difficulty": "🟢 Easy",
+          "answered": false
+        }
+      ],
+      "reflection": {
+        "question": "Why is it important to know who is interviewing you at each stage?",
+        "answer": ""
+      },
+      "revision": {
+        "interval": 2,
+        "lastDate": "",
+        "nextDate": "",
+        "confidence": "⚪ Beginner"
+      }
+    },
+    {
+      "id": "t_ip_1",
+      "domain": "interview_prep",
+      "module": "Module 1",
+      "submodule": "Personal Branding",
+      "title": "Tell Me About Yourself & Portfolio Presentation",
+      "learningType": "🎤 Present",
       "priority": "🔥 Critical",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Handling Questions.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Handling Questions correctly in production environments",
-        "✓ Answer key technical interview questions regarding Handling Questions"
-      ],
+      "difficulty": "🟢 Easy",
       "weight": 5,
+      "status": "Not Started",
+      "mastery": "⚪ Beginner",
+      "resource": "Elevator Pitch Formulas",
+      "practice": "Record yourself giving your 90-second pitch",
+      "notes": "Highlight key accomplishments, transition lines, and career focus.",
+      "completedOn": "",
+      "favorite": false,
+      "bookmarked": false,
+      "reviseLater": false,
       "interviewFrequency": "★★★★★",
       "learningStages": {
         "learn": false,
@@ -13098,44 +7073,30 @@ const DEFAULT_DATA = {
         "revision": false
       },
       "resources": {
-        "book": "The Pyramid Principle",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
+        "book": "Branding for Engineers",
+        "course": "Branding Bootcamp",
+        "youtube": "Elevator pitch tutorials",
+        "docs": "Branding template check"
       },
       "miniProjects": {
-        "name": "Handling Questions Prototype App",
+        "name": "Recorded Video Introduction",
         "status": "Not Started"
       },
       "industryExamples": [
         {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
+          "company": "LinkedIn",
+          "application": "Profile optimization guidelines"
         }
       ],
       "interviewQuestions": [
         {
-          "question": "Explain the fundamental concept of Handling Questions in a business context.",
+          "question": "Walk me through your resume in under 2 minutes.",
           "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Handling Questions?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Handling Questions to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
           "answered": false
         }
       ],
       "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Handling Questions?",
+        "question": "What is the hook in your introduction that recruiters remember most?",
         "answer": ""
       },
       "revision": {
@@ -13143,796 +7104,27 @@ const DEFAULT_DATA = {
         "lastDate": "",
         "nextDate": "",
         "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
+      }
     },
     {
-      "id": "comm_087",
-      "domain": "communication",
-      "module": "Module 7",
-      "submodule": "Presentation Skills",
-      "title": "Presentation Confidence",
-      "learningType": "🏗 Build",
-      "priority": "🟠 High",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Presentation Confidence.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Presentation Confidence correctly in production environments",
-        "✓ Answer key technical interview questions regarding Presentation Confidence"
-      ],
-      "weight": 3,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Talk Like TED",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Presentation Confidence Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Presentation Confidence in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Presentation Confidence?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Presentation Confidence to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Presentation Confidence?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_088",
-      "domain": "communication",
-      "module": "Module 7",
-      "submodule": "Presentation Skills",
-      "title": "Timing",
-      "learningType": "📖 Read",
-      "priority": "🟠 High",
-      "difficulty": "Easy",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Timing.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Timing correctly in production environments",
-        "✓ Answer key technical interview questions regarding Timing"
-      ],
-      "weight": 3,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Talk Like TED",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Timing Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Timing in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Timing?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Timing to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Timing?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_089",
-      "domain": "communication",
-      "module": "Module 7",
-      "submodule": "Presentation Skills",
-      "title": "Presentation Story Flow",
-      "learningType": "🏗 Build",
-      "priority": "🟠 High",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Presentation Story Flow.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Presentation Story Flow correctly in production environments",
-        "✓ Answer key technical interview questions regarding Presentation Story Flow"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Storytelling with Data",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Presentation Story Flow Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Presentation Story Flow in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Presentation Story Flow?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Presentation Story Flow to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Presentation Story Flow?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_090",
-      "domain": "communication",
-      "module": "Module 7",
-      "submodule": "Presentation Skills",
-      "title": "Projects: Present SQL Project",
-      "learningType": "🏗 Build",
-      "priority": "🟠 High",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Projects: Present SQL Project.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Projects: Present SQL Project correctly in production environments",
-        "✓ Answer key technical interview questions regarding Projects: Present SQL Project"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Talk Like TED",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Projects: Present SQL Project Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Projects: Present SQL Project in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Projects: Present SQL Project?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Projects: Present SQL Project to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Projects: Present SQL Project?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_091",
-      "domain": "communication",
-      "module": "Module 7",
-      "submodule": "Presentation Skills",
-      "title": "Projects: Present Python Project",
-      "learningType": "🏗 Build",
-      "priority": "🟠 High",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Projects: Present Python Project.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Projects: Present Python Project correctly in production environments",
-        "✓ Answer key technical interview questions regarding Projects: Present Python Project"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Talk Like TED",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Projects: Present Python Project Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Projects: Present Python Project in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Projects: Present Python Project?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Projects: Present Python Project to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Projects: Present Python Project?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_092",
-      "domain": "communication",
-      "module": "Module 7",
-      "submodule": "Presentation Skills",
-      "title": "Projects: Present Machine Learning Project",
-      "learningType": "🏗 Build",
-      "priority": "🟠 High",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Projects: Present Machine Learning Project.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Projects: Present Machine Learning Project correctly in production environments",
-        "✓ Answer key technical interview questions regarding Projects: Present Machine Learning Project"
-      ],
-      "weight": 5,
-      "interviewFrequency": "★★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Talk Like TED",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Projects: Present Machine Learning Project Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Projects: Present Machine Learning Project in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Projects: Present Machine Learning Project?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Projects: Present Machine Learning Project to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Projects: Present Machine Learning Project?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_093",
-      "domain": "communication",
-      "module": "Module 7",
-      "submodule": "Presentation Skills",
-      "title": "Projects: Present Kaggle Project",
-      "learningType": "🏗 Build",
-      "priority": "🟠 High",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Projects: Present Kaggle Project.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Projects: Present Kaggle Project correctly in production environments",
-        "✓ Answer key technical interview questions regarding Projects: Present Kaggle Project"
-      ],
-      "weight": 4,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "Talk Like TED",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Projects: Present Kaggle Project Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Projects: Present Kaggle Project in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Projects: Present Kaggle Project?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Projects: Present Kaggle Project to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Projects: Present Kaggle Project?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_094",
-      "domain": "communication",
-      "module": "Module 8",
-      "submodule": "Personal Brand",
-      "title": "LinkedIn Profile",
-      "learningType": "🏗 Build",
-      "priority": "🟠 High",
-      "difficulty": "Easy",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over LinkedIn Profile.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement LinkedIn Profile correctly in production environments",
-        "✓ Answer key technical interview questions regarding LinkedIn Profile"
-      ],
-      "weight": 2,
-      "interviewFrequency": "★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "LinkedIn",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "LinkedIn Profile Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of LinkedIn Profile in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using LinkedIn Profile?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied LinkedIn Profile to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying LinkedIn Profile?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_095",
-      "domain": "communication",
-      "module": "Module 8",
-      "submodule": "Personal Brand",
-      "title": "GitHub Profile",
-      "learningType": "📖 Read",
-      "priority": "🟠 High",
-      "difficulty": "Easy",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over GitHub Profile.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement GitHub Profile correctly in production environments",
-        "✓ Answer key technical interview questions regarding GitHub Profile"
-      ],
-      "weight": 2,
-      "interviewFrequency": "★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "GitHub Docs",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "GitHub Profile Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of GitHub Profile in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using GitHub Profile?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied GitHub Profile to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying GitHub Profile?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_096",
-      "domain": "communication",
-      "module": "Module 8",
-      "submodule": "Personal Brand",
-      "title": "Portfolio Website",
-      "learningType": "📖 Read",
-      "priority": "🟡 Medium",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Portfolio Website.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Portfolio Website correctly in production environments",
-        "✓ Answer key technical interview questions regarding Portfolio Website"
-      ],
-      "weight": 3,
-      "interviewFrequency": "★★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "GitHub Docs",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Portfolio Website Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Portfolio Website in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Portfolio Website?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Portfolio Website to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Portfolio Website?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_097",
-      "domain": "communication",
-      "module": "Module 8",
-      "submodule": "Personal Brand",
-      "title": "Resume Communication",
+      "id": "t_ip_2",
+      "domain": "interview_prep",
+      "module": "Module 2",
+      "submodule": "Behavioral Interviews",
+      "title": "Mastering the STAR Method & Building 20 Stories",
       "learningType": "🏗 Build",
       "priority": "🔥 Critical",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Resume Communication.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Resume Communication correctly in production environments",
-        "✓ Answer key technical interview questions regarding Resume Communication"
-      ],
-      "weight": 5,
+      "difficulty": "🟡 Medium",
+      "weight": 6,
+      "status": "Not Started",
+      "mastery": "⚪ Beginner",
+      "resource": "Behavioral Interview Prep Guide",
+      "practice": "Write 20 behavioral STAR stories for different leadership principles",
+      "notes": "Track Situation, Task, Action, and Results clearly. Quantify your achievements.",
+      "completedOn": "",
+      "favorite": false,
+      "bookmarked": false,
+      "reviseLater": false,
       "interviewFrequency": "★★★★★",
       "learningStages": {
         "learn": false,
@@ -13945,44 +7137,30 @@ const DEFAULT_DATA = {
         "revision": false
       },
       "resources": {
-        "book": "HBR Guide to Better Business Writing",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
+        "book": "Behavioral Interview Prep Guide",
+        "course": "Behavioral Interview Mastery",
+        "youtube": "STAR method breakdown",
+        "docs": "STAR stories template sheets"
       },
       "miniProjects": {
-        "name": "Resume Communication Prototype App",
+        "name": "20 STAR Story Bank Document",
         "status": "Not Started"
       },
       "industryExamples": [
         {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
+          "company": "Amazon",
+          "application": "STAR method verification against 16 Leadership Principles"
         }
       ],
       "interviewQuestions": [
         {
-          "question": "Explain the fundamental concept of Resume Communication in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Resume Communication?",
+          "question": "Describe a time you failed and what you learned from it.",
           "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Resume Communication to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
           "answered": false
         }
       ],
       "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Resume Communication?",
+        "question": "Which of your stories is the most versatile for behavioral questions?",
         "answer": ""
       },
       "revision": {
@@ -13990,27 +7168,28 @@ const DEFAULT_DATA = {
         "lastDate": "",
         "nextDate": "",
         "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
+      }
     },
     {
-      "id": "comm_098",
-      "domain": "communication",
-      "module": "Module 8",
-      "submodule": "Personal Brand",
-      "title": "Networking",
-      "learningType": "📖 Read",
-      "priority": "🟡 Medium",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Networking.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Networking correctly in production environments",
-        "✓ Answer key technical interview questions regarding Networking"
-      ],
-      "weight": 1,
-      "interviewFrequency": "★★",
+      "id": "t_ip_3",
+      "domain": "interview_prep",
+      "module": "Module 3",
+      "submodule": "Technical Communication",
+      "title": "Explaining Core Data Science to Stakeholders",
+      "learningType": "🎤 Present",
+      "priority": "🔥 Critical",
+      "difficulty": "🟡 Medium",
+      "weight": 5,
+      "status": "Not Started",
+      "mastery": "⚪ Beginner",
+      "resource": "Technical Communication Handbook",
+      "practice": "Explain SQL Indexes and Python Decorators to different stakeholders",
+      "notes": "Can you explain it to a Child, Friend, Manager, Recruiter, CEO, and Data Scientist?",
+      "completedOn": "",
+      "favorite": false,
+      "bookmarked": false,
+      "reviseLater": false,
+      "interviewFrequency": "★★★★★",
       "learningStages": {
         "learn": false,
         "watch": false,
@@ -14022,44 +7201,30 @@ const DEFAULT_DATA = {
         "revision": false
       },
       "resources": {
-        "book": "LinkedIn",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
+        "book": "Technical Communication Handbook",
+        "course": "Communication Lab",
+        "youtube": "Explain Like I'm Five series",
+        "docs": "Stakeholder explainers guide"
       },
       "miniProjects": {
-        "name": "Networking Prototype App",
+        "name": "Multi-level Concept Explainer Notes",
         "status": "Not Started"
       },
       "industryExamples": [
         {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
+          "company": "Netflix",
+          "application": "Engineers explaining tech choices in public tech blog posts"
         }
       ],
       "interviewQuestions": [
         {
-          "question": "Explain the fundamental concept of Networking in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Networking?",
+          "question": "How would you explain what a Random Forest model is to a non-technical Recruiter?",
           "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Networking to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
           "answered": false
         }
       ],
       "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Networking?",
+        "question": "What analogies work best when explaining machine learning concepts?",
         "answer": ""
       },
       "revision": {
@@ -14067,26 +7232,219 @@ const DEFAULT_DATA = {
         "lastDate": "",
         "nextDate": "",
         "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
+      }
     },
     {
-      "id": "comm_099",
-      "domain": "communication",
-      "module": "Module 8",
-      "submodule": "Personal Brand",
-      "title": "Writing Technical Posts",
-      "learningType": "📖 Read",
-      "priority": "🟡 Medium",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Writing Technical Posts.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Writing Technical Posts correctly in production environments",
-        "✓ Answer key technical interview questions regarding Writing Technical Posts"
+      "id": "t_ip_4",
+      "domain": "interview_prep",
+      "module": "Module 4",
+      "submodule": "Project Defense",
+      "title": "Project Defense Framework: Problems, Trade-offs & Decisions",
+      "learningType": "🏗 Build",
+      "priority": "🔥 Critical",
+      "difficulty": "🔴 Hard",
+      "weight": 6,
+      "status": "Not Started",
+      "mastery": "⚪ Beginner",
+      "resource": "Designing Data-Intensive Applications",
+      "practice": "Document architectural trade-offs for 3 projects",
+      "notes": "Every project defense must answer: Problem, Why, Approach, Alternatives, Trade-offs, Results, Future Improvements, and Business Value.",
+      "completedOn": "",
+      "favorite": false,
+      "bookmarked": false,
+      "reviseLater": false,
+      "interviewFrequency": "★★★★★",
+      "learningStages": {
+        "learn": false,
+        "watch": false,
+        "practice": false,
+        "project": false,
+        "industry": false,
+        "interview": false,
+        "reflection": false,
+        "revision": false
+      },
+      "resources": {
+        "book": "Designing Data-Intensive Applications",
+        "course": "System Architectures Defense",
+        "youtube": "System design tradeoffs",
+        "docs": "Project defense checklists"
+      },
+      "miniProjects": {
+        "name": "Project Defense Architecture Slide Deck",
+        "status": "Not Started"
+      },
+      "industryExamples": [
+        {
+          "company": "Airbnb",
+          "application": "Internal design reviews and architecture defenses"
+        }
       ],
-      "weight": 3,
+      "interviewQuestions": [
+        {
+          "question": "Why did you choose that specific model or database index? What alternatives did you consider?",
+          "difficulty": "🔴 Hard",
+          "answered": false
+        }
+      ],
+      "reflection": {
+        "question": "What is the weakest part of your project architecture and how do you defend it?",
+        "answer": ""
+      },
+      "revision": {
+        "interval": 2,
+        "lastDate": "",
+        "nextDate": "",
+        "confidence": "⚪ Beginner"
+      }
+    },
+    {
+      "id": "t_ip_5",
+      "domain": "interview_prep",
+      "module": "Module 5",
+      "submodule": "Case Studies",
+      "title": "Product Sense & Case Studies: Uber, Netflix, Amazon",
+      "learningType": "📖 Read",
+      "priority": "🟠 High",
+      "difficulty": "🔴 Hard",
+      "weight": 5,
+      "status": "Not Started",
+      "mastery": "⚪ Beginner",
+      "resource": "Case In Point",
+      "practice": "Solve 5 business case problems",
+      "notes": "Focus on structured business thinking, metric selection, and issue trees instead of writing code.",
+      "completedOn": "",
+      "favorite": false,
+      "bookmarked": false,
+      "reviseLater": false,
+      "interviewFrequency": "★★★★★",
+      "learningStages": {
+        "learn": false,
+        "watch": false,
+        "practice": false,
+        "project": false,
+        "industry": false,
+        "interview": false,
+        "reflection": false,
+        "revision": false
+      },
+      "resources": {
+        "book": "Case In Point",
+        "course": "Product Analytics and Case Studies",
+        "youtube": "Mock business case interviews",
+        "docs": "Case frameworks reference sheet"
+      },
+      "miniProjects": {
+        "name": "Product Case Analysis Report",
+        "status": "Not Started"
+      },
+      "industryExamples": [
+        {
+          "company": "Uber",
+          "application": "Dynamic pricing algorithms case study"
+        }
+      ],
+      "interviewQuestions": [
+        {
+          "question": "How would you measure the success of a new recommendations feed on Netflix?",
+          "difficulty": "🔴 Hard",
+          "answered": false
+        }
+      ],
+      "reflection": {
+        "question": "What frameworks help you structure vague product sense questions?",
+        "answer": ""
+      },
+      "revision": {
+        "interval": 2,
+        "lastDate": "",
+        "nextDate": "",
+        "confidence": "⚪ Beginner"
+      }
+    },
+    {
+      "id": "t_ip_6",
+      "domain": "interview_prep",
+      "module": "Module 6",
+      "submodule": "Mock Interviews",
+      "title": "Weekly Mock Interview Tracker & Performance Review",
+      "learningType": "🎤 Present",
+      "priority": "🔥 Critical",
+      "difficulty": "🔴 Hard",
+      "weight": 7,
+      "status": "Not Started",
+      "mastery": "⚪ Beginner",
+      "resource": "Mock Interview Standard Protocols",
+      "practice": "Conduct and log one mock interview weekly",
+      "notes": "Track Speed, Confidence, Technical Accuracy, Eye Contact, and Vocabulary.",
+      "completedOn": "",
+      "favorite": false,
+      "bookmarked": false,
+      "reviseLater": false,
+      "interviewFrequency": "★★★★★",
+      "learningStages": {
+        "learn": false,
+        "watch": false,
+        "practice": false,
+        "project": false,
+        "industry": false,
+        "interview": false,
+        "reflection": false,
+        "revision": false
+      },
+      "resources": {
+        "book": "Mock Interview Standard Protocols",
+        "course": "Self-Review Mechanics",
+        "youtube": "Good vs Bad mock interview behaviors",
+        "docs": "Mock interview scorecards"
+      },
+      "miniProjects": {
+        "name": "Mock Performance Review Logs",
+        "status": "Not Started"
+      },
+      "industryExamples": [
+        {
+          "company": "Pramp",
+          "application": "Peer-to-peer mock interview structures"
+        }
+      ],
+      "interviewQuestions": [
+        {
+          "question": "How do you rate your body language and speaking speed in high-pressure mocks?",
+          "difficulty": "🟡 Medium",
+          "answered": false
+        }
+      ],
+      "reflection": {
+        "question": "What is your main weakness in live mock sessions (e.g. rushing, silence)?",
+        "answer": ""
+      },
+      "revision": {
+        "interval": 2,
+        "lastDate": "",
+        "nextDate": "",
+        "confidence": "⚪ Beginner"
+      }
+    },
+    {
+      "id": "t_ip_7",
+      "domain": "interview_prep",
+      "module": "Module 7",
+      "submodule": "Company Tracks",
+      "title": "Deep Dive into Targeted Company Tracks: Google, Amex",
+      "learningType": "📖 Read",
+      "priority": "🟠 High",
+      "difficulty": "🟡 Medium",
+      "weight": 4,
+      "status": "Not Started",
+      "mastery": "⚪ Beginner",
+      "resource": "Company Prep Guides Collection",
+      "practice": "Analyze the specific interview loops of 3 target companies",
+      "notes": "Map company focus areas: Amex (Business Case, SQL), Google (Stats, Python, Googlyness), Swiggy (System Design, Speed).",
+      "completedOn": "",
+      "favorite": false,
+      "bookmarked": false,
+      "reviseLater": false,
       "interviewFrequency": "★★★★",
       "learningStages": {
         "learn": false,
@@ -14099,44 +7457,30 @@ const DEFAULT_DATA = {
         "revision": false
       },
       "resources": {
-        "book": "LinkedIn",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
+        "book": "Company Prep Guides Collection",
+        "course": "Company Focus Seminars",
+        "youtube": "How I got offer interviews at Microsoft",
+        "docs": "Company track matrices"
       },
       "miniProjects": {
-        "name": "Writing Technical Posts Prototype App",
+        "name": "Target Company Playbook Profile",
         "status": "Not Started"
       },
       "industryExamples": [
         {
           "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
+          "application": "Focuses heavily on general cognitive ability and scaling metrics"
         }
       ],
       "interviewQuestions": [
         {
-          "question": "Explain the fundamental concept of Writing Technical Posts in a business context.",
+          "question": "Explain the core cultural principles of your top target company.",
           "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Writing Technical Posts?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Writing Technical Posts to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
           "answered": false
         }
       ],
       "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Writing Technical Posts?",
+        "question": "How does your resume align with the specific values of your target company?",
         "answer": ""
       },
       "revision": {
@@ -14144,26 +7488,27 @@ const DEFAULT_DATA = {
         "lastDate": "",
         "nextDate": "",
         "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
+      }
     },
     {
-      "id": "comm_100",
-      "domain": "communication",
+      "id": "t_ip_8",
+      "domain": "interview_prep",
       "module": "Module 8",
-      "submodule": "Personal Brand",
-      "title": "Building Authority",
-      "learningType": "📖 Read",
-      "priority": "🟡 Medium",
-      "difficulty": "Hard",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Building Authority.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Building Authority correctly in production environments",
-        "✓ Answer key technical interview questions regarding Building Authority"
-      ],
+      "submodule": "Salary & Negotiation",
+      "title": "Salary Expectation, Counter Offers & HR Negotiation",
+      "learningType": "🎤 Present",
+      "priority": "🟠 High",
+      "difficulty": "🟡 Medium",
       "weight": 3,
+      "status": "Not Started",
+      "mastery": "⚪ Beginner",
+      "resource": "Never Split the Difference",
+      "practice": "Script and roleplay salary negotiation responses",
+      "notes": "Understand equity models, bonus structures, total comp, and counter-offer framing.",
+      "completedOn": "",
+      "favorite": false,
+      "bookmarked": false,
+      "reviseLater": false,
       "interviewFrequency": "★★★★",
       "learningStages": {
         "learn": false,
@@ -14176,44 +7521,30 @@ const DEFAULT_DATA = {
         "revision": false
       },
       "resources": {
-        "book": "LinkedIn",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
+        "book": "Never Split the Difference",
+        "course": "Negotiation Bootcamp",
+        "youtube": "Negotiating total compensation scripts",
+        "docs": "Salary comparators tracker"
       },
       "miniProjects": {
-        "name": "Building Authority Prototype App",
+        "name": "Salary Negotiation Swipe Script",
         "status": "Not Started"
       },
       "industryExamples": [
         {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
+          "company": "Levels.fyi",
+          "application": "Compensation transparency and benchmarking guides"
         }
       ],
       "interviewQuestions": [
         {
-          "question": "Explain the fundamental concept of Building Authority in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Building Authority?",
+          "question": "What are your salary expectations? (Explain how you answer without locked figures)",
           "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Building Authority to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
           "answered": false
         }
       ],
       "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Building Authority?",
+        "question": "What is your walk-away number and how do you determine it?",
         "answer": ""
       },
       "revision": {
@@ -14221,27 +7552,28 @@ const DEFAULT_DATA = {
         "lastDate": "",
         "nextDate": "",
         "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
+      }
     },
     {
-      "id": "comm_101",
-      "domain": "communication",
-      "module": "Module 8",
-      "submodule": "Personal Brand",
-      "title": "Career Positioning",
+      "id": "t_ip_9",
+      "domain": "interview_prep",
+      "module": "Module 9",
+      "submodule": "Offer Readiness",
+      "title": "Final Offer Readiness Checklist Validation",
       "learningType": "📖 Read",
-      "priority": "🟡 Medium",
-      "difficulty": "Medium",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Career Positioning.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Career Positioning correctly in production environments",
-        "✓ Answer key technical interview questions regarding Career Positioning"
-      ],
-      "weight": 2,
-      "interviewFrequency": "★★★",
+      "priority": "🔥 Critical",
+      "difficulty": "🟢 Easy",
+      "weight": 5,
+      "status": "Not Started",
+      "mastery": "⚪ Beginner",
+      "resource": "Offer Readiness Handbook",
+      "practice": "Complete the ultimate offer readiness checklist",
+      "notes": "Verify Resume, Portfolio, LinkedIn, Mock Scores, Behavioral stories, and Technical answers are green.",
+      "completedOn": "",
+      "favorite": false,
+      "bookmarked": false,
+      "reviseLater": false,
+      "interviewFrequency": "★★★★★",
       "learningStages": {
         "learn": false,
         "watch": false,
@@ -14253,44 +7585,30 @@ const DEFAULT_DATA = {
         "revision": false
       },
       "resources": {
-        "book": "LinkedIn",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
+        "book": "Offer Readiness Handbook",
+        "course": "Final Polish Review",
+        "youtube": "Final steps before placements week",
+        "docs": "Readiness checklist sheets"
       },
       "miniProjects": {
-        "name": "Career Positioning Prototype App",
+        "name": "System Audit Scorecard",
         "status": "Not Started"
       },
       "industryExamples": [
         {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
+          "company": "HR",
+          "application": "Final checks and background check preparation guides"
         }
       ],
       "interviewQuestions": [
         {
-          "question": "Explain the fundamental concept of Career Positioning in a business context.",
+          "question": "Are all components of your application strategy green and verified?",
           "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Career Positioning?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Career Positioning to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
           "answered": false
         }
       ],
       "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Career Positioning?",
+        "question": "What is the single area you need to polish right before interview day?",
         "answer": ""
       },
       "revision": {
@@ -14298,85 +7616,7 @@ const DEFAULT_DATA = {
         "lastDate": "",
         "nextDate": "",
         "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
-    },
-    {
-      "id": "comm_102",
-      "domain": "communication",
-      "module": "Module 8",
-      "submodule": "Personal Brand",
-      "title": "Professional Online Presence",
-      "learningType": "📖 Read",
-      "priority": "🟡 Medium",
-      "difficulty": "Easy",
-      "status": "⬜ Not Started",
-      "learningObjective": "Develop complete theoretical and practical mastery over Professional Online Presence.",
-      "prerequisites": [],
-      "outcomes": [
-        "✓ Implement Professional Online Presence correctly in production environments",
-        "✓ Answer key technical interview questions regarding Professional Online Presence"
-      ],
-      "weight": 2,
-      "interviewFrequency": "★★★",
-      "learningStages": {
-        "learn": false,
-        "watch": false,
-        "practice": false,
-        "project": false,
-        "industry": false,
-        "interview": false,
-        "reflection": false,
-        "revision": false
-      },
-      "resources": {
-        "book": "LinkedIn",
-        "course": "Domain Master Course Video",
-        "youtube": "Curated YouTube playlist references",
-        "docs": "Official Language / Tool Documentation"
-      },
-      "miniProjects": {
-        "name": "Professional Online Presence Prototype App",
-        "status": "Not Started"
-      },
-      "industryExamples": [
-        {
-          "company": "Google",
-          "application": "Uses structural writing protocols for API documentation alignment."
-        },
-        {
-          "company": "Uber",
-          "application": "Uses elevator pitch introduces for stakeholder alignment."
-        }
-      ],
-      "interviewQuestions": [
-        {
-          "question": "Explain the fundamental concept of Professional Online Presence in a business context.",
-          "difficulty": "🟢 Easy",
-          "answered": false
-        },
-        {
-          "question": "How would you troubleshoot or optimize a failure/slowdown when using Professional Online Presence?",
-          "difficulty": "🟡 Medium",
-          "answered": false
-        },
-        {
-          "question": "Describe a scenario where you applied Professional Online Presence to solve a complex engineering or analytical challenge.",
-          "difficulty": "🔴 Hard",
-          "answered": false
-        }
-      ],
-      "reflection": {
-        "question": "What is the key scaling or performance bottleneck when applying Professional Online Presence?",
-        "answer": ""
-      },
-      "revision": {
-        "interval": 2,
-        "lastDate": "",
-        "nextDate": "",
-        "confidence": "⚪ Beginner"
-      },
-      "mastery": "⚪ Beginner"
+      }
     }
   ],
   "resources": [

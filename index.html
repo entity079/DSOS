@@ -13,9 +13,9 @@
         extend: {
           colors: {
             brand: {
-              navy: '#120404',
-              dark: '#240A0A',
-              slate: '#3B1212',
+              navy: '#0B0303',
+              dark: '#1C0808',
+              slate: '#2C0D0D',
               blue: '#E53E3E',
               hover: '#C53030',
               ice: '#FFF5F5',
@@ -40,11 +40,11 @@
   <style>
     body {
       font-family: 'Inter', 'Segoe UI', sans-serif;
-      background-color: #0B0303;
+      background-color: #050101;
       color: #FEE2E2;
     }
     .glass-card {
-      background: rgba(38, 12, 12, 0.45);
+      background: rgba(28, 8, 8, 0.45);
       backdrop-filter: blur(12px);
       border: 1px solid rgba(239, 68, 68, 0.08);
     }
@@ -199,7 +199,7 @@
     </aside>
 
     <!-- Main Panel Container -->
-    <main class="flex-grow flex flex-col overflow-hidden bg-[#0A0D14]">
+    <main class="flex-grow flex flex-col overflow-hidden bg-[#070101]">
       <!-- Top Actions Bar -->
       <header class="h-16 border-b border-brand-border px-8 flex items-center justify-between shrink-0 bg-brand-navy/60 backdrop-blur-md">
         <div class="flex items-center space-x-3 text-sm">
@@ -238,7 +238,7 @@
         <h3 class="text-lg font-bold text-white font-['Outfit']" id="task-modal-title"><i class="fas fa-plus mr-2 text-brand-blue"></i>Add Study Task</h3>
         <button onclick="closeModal('task-modal')" class="text-gray-400 hover:text-white transition"><i class="fas fa-times"></i></button>
       </div>
-            <form id="task-form" onsubmit="saveTask(event)" class="space-y-4">
+      <form id="task-form" onsubmit="saveTask(event)" class="space-y-4">
         <input type="hidden" id="task-edit-id">
         <div class="grid grid-cols-2 gap-4">
           <div>
@@ -343,7 +343,7 @@
         <h3 class="text-lg font-bold text-white font-['Outfit']" id="res-modal-title"><i class="fas fa-plus mr-2 text-brand-blue"></i>Add Resource</h3>
         <button onclick="closeModal('resource-modal')" class="text-gray-400 hover:text-white transition"><i class="fas fa-times"></i></button>
       </div>
-            <form id="resource-form" onsubmit="saveResource(event)" class="space-y-4">
+      <form id="resource-form" onsubmit="saveResource(event)" class="space-y-4">
         <input type="hidden" id="res-edit-id">
         <div>
           <label class="block text-xs font-semibold text-gray-400 mb-1">Resource Name</label>
@@ -675,7 +675,7 @@
     </div>
   </div>
 
-  <!-- 5. Interactive Learning Journey Drawer -->
+  <!-- 8. Interactive Learning Journey Drawer -->
   <div id="journey-drawer" class="fixed inset-y-0 right-0 max-w-xl w-full bg-brand-navy/95 backdrop-blur-md border-l border-brand-border z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between shadow-2xl hidden">
     <!-- Header -->
     <div class="flex justify-between items-center p-6 border-b border-brand-border bg-brand-navy/55">
@@ -690,8 +690,27 @@
     </div>
 
     <!-- Body Scrollable Content -->
-    <div class="flex-1 p-6 overflow-y-auto custom-scroll space-y-6">
+    <div class="flex-grow p-6 overflow-y-auto custom-scroll space-y-6">
       
+      <!-- Explain Like widget -->
+      <div id="explain-like-widget" class="glass-card p-4 rounded-xl border border-brand-border hidden">
+        <div class="text-xs font-bold text-white mb-2.5 tracking-tight font-['Outfit'] flex items-center justify-between">
+          <span><i class="fas fa-comments text-brand-blue mr-1.5"></i>Explain Like...</span>
+          <span class="text-[9px] text-gray-500 uppercase font-bold">Multi-Audience Mastery</span>
+        </div>
+        <div class="grid grid-cols-3 sm:grid-cols-6 gap-1 mb-3.5">
+          <button onclick="setExplainAudience('child')" id="btn-explain-child" class="px-1.5 py-1 text-[9px] font-bold bg-brand-navy rounded border border-brand-border text-gray-400 hover:text-white">Child</button>
+          <button onclick="setExplainAudience('friend')" id="btn-explain-friend" class="px-1.5 py-1 text-[9px] font-bold bg-brand-navy rounded border border-brand-border text-gray-400 hover:text-white">Friend</button>
+          <button onclick="setExplainAudience('recruiter')" id="btn-explain-recruiter" class="px-1.5 py-1 text-[9px] font-bold bg-brand-navy rounded border border-brand-border text-gray-400 hover:text-white">Recruiter</button>
+          <button onclick="setExplainAudience('manager')" id="btn-explain-manager" class="px-1.5 py-1 text-[9px] font-bold bg-brand-navy rounded border border-brand-border text-gray-400 hover:text-white">Manager</button>
+          <button onclick="setExplainAudience('ceo')" id="btn-explain-ceo" class="px-1.5 py-1 text-[9px] font-bold bg-brand-navy rounded border border-brand-border text-gray-400 hover:text-white">CEO</button>
+          <button onclick="setExplainAudience('data_scientist')" id="btn-explain-data_scientist" class="px-1.5 py-1 text-[9px] font-bold bg-brand-navy rounded border border-brand-border text-gray-400 hover:text-white">Expert</button>
+        </div>
+        <div class="bg-brand-navy/60 p-3.5 rounded-lg border border-brand-border text-xs leading-relaxed text-gray-300 font-medium italic" id="explain-output-box">
+          Select an audience above to see the structural summary.
+        </div>
+      </div>
+
       <!-- Learning DNA Panel -->
       <div class="glass-card p-4 rounded-xl border border-brand-border">
         <div class="text-xs font-bold text-white mb-3 tracking-tight font-['Outfit']"><i class="fas fa-dna text-brand-blue mr-1.5"></i>Learning DNA Mastery</div>
